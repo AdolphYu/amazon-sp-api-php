@@ -1,5 +1,7 @@
 # Amazon Selling Partner API PHP 
 
+Personal Use!
+
 This is an API Binding in PHP for the new Amazon Selling Partner API.
 
 This library is based on the output of `swagger-codegen` with the [OpenAPI files provided by Amazon](https://github.com/amzn/selling-partner-api-models/tree/main/models) and has been modified by the contributors.
