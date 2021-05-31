@@ -26,7 +26,7 @@ use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
  *
  * @author   Stefan Neuhaus / ClouSale
  */
-class Date implements ModelInterface, ArrayAccess
+class DateTime implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -35,7 +35,7 @@ class Date implements ModelInterface, ArrayAccess
      *
      * @var string
      */
-    protected static $swaggerModelName = 'Date';
+    protected static $swaggerModelName = 'DateTime';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
