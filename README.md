@@ -23,7 +23,7 @@ composer require adolphyu/amazon-sp-api-php
 
 # Detailed Documentation
 
-You can find detailed documentation for this PHP Library in the [`docs/Api` directory](https://github.com/clousale/amazon-sp-api-php/tree/master/docs/Api) (Please note: Namespaces and other classes could have been changed)
+You can find detailed documentation for this PHP Library in the [`docs/Api` directory](https://github.com/adolphyu/amazon-sp-api-php/tree/master/docs/Api) (Please note: Namespaces and other classes could have been changed)
 
 You can find general information about the Amazon Selling Partner API on [the official Amazon Developer Website](https://developer.amazonservices.com).
 
