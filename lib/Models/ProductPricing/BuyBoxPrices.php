@@ -248,4 +248,12 @@ class BuyBoxPrices implements ModelInterface, ArrayAccess
 
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
+
+    /**
+     * @return string
+     */
+    public function getSubClass()
+    {
+        return BuyBoxPriceType::class;
+    }
 }
