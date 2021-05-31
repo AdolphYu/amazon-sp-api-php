@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-09-04
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Feeds;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Feeds;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CreateFeedDocumentSpecification Class Doc Comment.

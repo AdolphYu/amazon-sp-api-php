@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-09-04
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Feeds;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Feeds;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CreateFeedSpecification Class Doc Comment.
@@ -46,7 +46,7 @@ class CreateFeedSpecification implements ModelInterface, ArrayAccess
         'feed_type' => 'string',
 'marketplace_ids' => 'string[]',
 'input_feed_document_id' => 'string',
-'feed_options' => '\ClouSale\AmazonSellingPartnerAPI\Models\Feeds\FeedOptions',    ];
+'feed_options' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\FeedOptions',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -283,7 +283,7 @@ class CreateFeedSpecification implements ModelInterface, ArrayAccess
     /**
      * Gets feed_options.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\FeedOptions
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\FeedOptions
      */
     public function getFeedOptions()
     {
@@ -293,7 +293,7 @@ class CreateFeedSpecification implements ModelInterface, ArrayAccess
     /**
      * Sets feed_options.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\FeedOptions $feed_options feed_options
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\FeedOptions $feed_options feed_options
      *
      * @return $this
      */

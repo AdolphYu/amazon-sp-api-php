@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Solicitations;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetSchemaResponseLinks Class Doc Comment.
@@ -43,7 +43,7 @@ class GetSchemaResponseLinks implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'self' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject',    ];
+        'self' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -187,7 +187,7 @@ class GetSchemaResponseLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject
      */
     public function getSelf()
     {
@@ -197,7 +197,7 @@ class GetSchemaResponseLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject $self self
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject $self self
      *
      * @return $this
      */

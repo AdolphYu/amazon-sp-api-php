@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Orders;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Orders;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetOrderAddressResponse Class Doc Comment.
@@ -46,8 +46,8 @@ class GetOrderAddressResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderAddress',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\ErrorList',    ];
+        'payload' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderAddress',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class GetOrderAddressResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderAddress
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderAddress
      */
     public function getPayload()
     {
@@ -202,7 +202,7 @@ class GetOrderAddressResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderAddress $payload payload
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderAddress $payload payload
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class GetOrderAddressResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\ErrorList
      */
     public function getErrors()
     {
@@ -226,7 +226,7 @@ class GetOrderAddressResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Orders\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\ErrorList $errors errors
      *
      * @return $this
      */

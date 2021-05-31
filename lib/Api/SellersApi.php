@@ -13,12 +13,12 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Api;
+namespace AdolphYu\AmazonSellingPartnerAPI\Api;
 
-use ClouSale\AmazonSellingPartnerAPI\Configuration;
-use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
-use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
-use ClouSale\AmazonSellingPartnerAPI\Models\Sellers\GetMarketplaceParticipationsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Configuration;
+use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
+use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\GetMarketplaceParticipationsResponse;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Request;
@@ -64,10 +64,10 @@ class SellersApi
     /**
      * Operation getMarketplaceParticipations.
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Sellers\GetMarketplaceParticipationsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\GetMarketplaceParticipationsResponse
      */
     public function getMarketplaceParticipations()
     {
@@ -79,10 +79,10 @@ class SellersApi
     /**
      * Operation getMarketplaceParticipationsWithHttpInfo.
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Sellers\GetMarketplaceParticipationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\GetMarketplaceParticipationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketplaceParticipationsWithHttpInfo()
     {

@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * FulfillmentPreviewShipment Class Doc Comment.
@@ -46,12 +46,12 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'earliest_ship_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
-'latest_ship_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
-'earliest_arrival_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
-'latest_arrival_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
+        'earliest_ship_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
+'latest_ship_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
+'earliest_arrival_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
+'latest_arrival_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
 'shipping_notes' => 'string[]',
-'fulfillment_preview_items' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewItemList',    ];
+'fulfillment_preview_items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewItemList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -220,7 +220,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Gets earliest_ship_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
      */
     public function getEarliestShipDate()
     {
@@ -230,7 +230,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Sets earliest_ship_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $earliest_ship_date earliest_ship_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $earliest_ship_date earliest_ship_date
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Gets latest_ship_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
      */
     public function getLatestShipDate()
     {
@@ -254,7 +254,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Sets latest_ship_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $latest_ship_date latest_ship_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $latest_ship_date latest_ship_date
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Gets earliest_arrival_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
      */
     public function getEarliestArrivalDate()
     {
@@ -278,7 +278,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Sets earliest_arrival_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $earliest_arrival_date earliest_arrival_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $earliest_arrival_date earliest_arrival_date
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Gets latest_arrival_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
      */
     public function getLatestArrivalDate()
     {
@@ -302,7 +302,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Sets latest_arrival_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $latest_arrival_date latest_arrival_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $latest_arrival_date latest_arrival_date
      *
      * @return $this
      */
@@ -340,7 +340,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Gets fulfillment_preview_items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewItemList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewItemList
      */
     public function getFulfillmentPreviewItems()
     {
@@ -350,7 +350,7 @@ class FulfillmentPreviewShipment implements ModelInterface, ArrayAccess
     /**
      * Sets fulfillment_preview_items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewItemList $fulfillment_preview_items fulfillment_preview_items
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewItemList $fulfillment_preview_items fulfillment_preview_items
      *
      * @return $this
      */

@@ -13,21 +13,21 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Api;
+namespace AdolphYu\AmazonSellingPartnerAPI\Api;
 
-use ClouSale\AmazonSellingPartnerAPI\Configuration;
-use ClouSale\AmazonSellingPartnerAPI\ExceptionThrower;
-use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
-use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DeleteDestinationResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DeleteSubscriptionByIdResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionByIdResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionResponse;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Configuration;
+use AdolphYu\AmazonSellingPartnerAPI\ExceptionThrower;
+use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
+use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DeleteDestinationResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DeleteSubscriptionByIdResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionByIdResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionResponse;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Request;
@@ -74,12 +74,12 @@ class NotificationsApi
     /**
      * Operation createDestination.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationResponse
      */
     public function createDestination($body)
     {
@@ -91,12 +91,12 @@ class NotificationsApi
     /**
      * Operation createDestinationWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDestinationWithHttpInfo($body)
     {
@@ -108,7 +108,7 @@ class NotificationsApi
     /**
      * Operation createDestinationAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -127,7 +127,7 @@ class NotificationsApi
     /**
      * Operation createDestinationAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -143,7 +143,7 @@ class NotificationsApi
     /**
      * Create request for operation 'createDestination'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateDestinationRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -167,13 +167,13 @@ class NotificationsApi
     /**
      * Operation createSubscription.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              body (required)
      * @param string                                                                           $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionResponse
      */
     public function createSubscription($body, $notification_type)
     {
@@ -185,13 +185,13 @@ class NotificationsApi
     /**
      * Operation createSubscriptionWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
      * @param string                                                                           $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createSubscriptionWithHttpInfo($body, $notification_type)
     {
@@ -203,7 +203,7 @@ class NotificationsApi
     /**
      * Operation createSubscriptionAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
      * @param string                                                                           $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
@@ -223,7 +223,7 @@ class NotificationsApi
     /**
      * Operation createSubscriptionAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
      * @param string                                                                           $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
@@ -240,7 +240,7 @@ class NotificationsApi
     /**
      * Create request for operation 'createSubscription'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\CreateSubscriptionRequest $body              (required)
      * @param string                                                                           $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
@@ -277,9 +277,9 @@ class NotificationsApi
      * @param string $destination_id The identifier for the destination that you want to delete. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DeleteDestinationResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DeleteDestinationResponse
      */
     public function deleteDestination($destination_id)
     {
@@ -294,9 +294,9 @@ class NotificationsApi
      * @param string $destination_id The identifier for the destination that you want to delete. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DeleteDestinationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DeleteDestinationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteDestinationWithHttpInfo($destination_id)
     {
@@ -382,9 +382,9 @@ class NotificationsApi
      * @param string $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DeleteSubscriptionByIdResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DeleteSubscriptionByIdResponse
      */
     public function deleteSubscriptionById($subscription_id, $notification_type)
     {
@@ -400,9 +400,9 @@ class NotificationsApi
      * @param string $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DeleteSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DeleteSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteSubscriptionByIdWithHttpInfo($subscription_id, $notification_type)
     {
@@ -502,9 +502,9 @@ class NotificationsApi
      * @param string $destination_id The identifier generated when you created the destination. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationResponse
      */
     public function getDestination($destination_id)
     {
@@ -519,9 +519,9 @@ class NotificationsApi
      * @param string $destination_id The identifier generated when you created the destination. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDestinationWithHttpInfo($destination_id)
     {
@@ -604,9 +604,9 @@ class NotificationsApi
      * Operation getDestinations.
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationsResponse
      */
     public function getDestinations()
     {
@@ -619,9 +619,9 @@ class NotificationsApi
      * Operation getDestinationsWithHttpInfo.
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetDestinationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDestinationsWithHttpInfo()
     {
@@ -686,9 +686,9 @@ class NotificationsApi
      * @param string $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionResponse
      */
     public function getSubscription($notification_type)
     {
@@ -703,9 +703,9 @@ class NotificationsApi
      * @param string $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSubscriptionWithHttpInfo($notification_type)
     {
@@ -791,9 +791,9 @@ class NotificationsApi
      * @param string $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionByIdResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionByIdResponse
      */
     public function getSubscriptionById($subscription_id, $notification_type)
     {
@@ -809,9 +809,9 @@ class NotificationsApi
      * @param string $notification_type The type of notification to which you want to subscribe.   For more information about notification types, see the Notifications API Use Case Guide. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\GetSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSubscriptionByIdWithHttpInfo($subscription_id, $notification_type)
     {

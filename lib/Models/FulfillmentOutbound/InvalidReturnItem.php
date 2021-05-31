@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * InvalidReturnItem Class Doc Comment.
@@ -48,7 +48,7 @@ class InvalidReturnItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_return_item_id' => 'string',
 'seller_fulfillment_order_item_id' => 'string',
-'invalid_item_reason' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\InvalidItemReason',    ];
+'invalid_item_reason' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\InvalidItemReason',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -256,7 +256,7 @@ class InvalidReturnItem implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_item_reason.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\InvalidItemReason
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\InvalidItemReason
      */
     public function getInvalidItemReason()
     {
@@ -266,7 +266,7 @@ class InvalidReturnItem implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_item_reason.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\InvalidItemReason $invalid_item_reason invalid_item_reason
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\InvalidItemReason $invalid_item_reason invalid_item_reason
      *
      * @return $this
      */

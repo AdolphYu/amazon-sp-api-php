@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * UpdateFulfillmentOrderItem Class Doc Comment.
@@ -48,14 +48,14 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
 'seller_fulfillment_order_item_id' => 'string',
-'quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Quantity',
+'quantity' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Quantity',
 'gift_message' => 'string',
 'displayable_comment' => 'string',
 'fulfillment_network_sku' => 'string',
 'order_item_disposition' => 'string',
-'per_unit_declared_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',
-'per_unit_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',
-'per_unit_tax' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',    ];
+'per_unit_declared_value' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',
+'per_unit_price' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',
+'per_unit_tax' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -295,7 +295,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Quantity
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Quantity
      */
     public function getQuantity()
     {
@@ -305,7 +305,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Quantity $quantity quantity
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Quantity $quantity quantity
      *
      * @return $this
      */
@@ -415,7 +415,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets per_unit_declared_value.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
      */
     public function getPerUnitDeclaredValue()
     {
@@ -425,7 +425,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets per_unit_declared_value.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $per_unit_declared_value per_unit_declared_value
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $per_unit_declared_value per_unit_declared_value
      *
      * @return $this
      */
@@ -439,7 +439,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets per_unit_price.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
      */
     public function getPerUnitPrice()
     {
@@ -449,7 +449,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets per_unit_price.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $per_unit_price per_unit_price
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $per_unit_price per_unit_price
      *
      * @return $this
      */
@@ -463,7 +463,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets per_unit_tax.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
      */
     public function getPerUnitTax()
     {
@@ -473,7 +473,7 @@ class UpdateFulfillmentOrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets per_unit_tax.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $per_unit_tax per_unit_tax
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $per_unit_tax per_unit_tax
      *
      * @return $this
      */

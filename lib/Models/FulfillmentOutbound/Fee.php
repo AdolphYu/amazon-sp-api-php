@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Fee Class Doc Comment.
@@ -47,7 +47,7 @@ class Fee implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'name' => 'string',
-'amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',    ];
+'amount' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -254,7 +254,7 @@ self::NAME_FBA_FULFILLMENT_COD_FEE,        ];
     /**
      * Gets amount.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money
      */
     public function getAmount()
     {
@@ -264,7 +264,7 @@ self::NAME_FBA_FULFILLMENT_COD_FEE,        ];
     /**
      * Sets amount.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $amount amount
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Money $amount amount
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * AdditionalInputs Class Doc Comment.
@@ -47,7 +47,7 @@ class AdditionalInputs implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'additional_input_field_name' => 'string',
-'seller_input_definition' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\SellerInputDefinition',    ];
+'seller_input_definition' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\SellerInputDefinition',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -216,7 +216,7 @@ class AdditionalInputs implements ModelInterface, ArrayAccess
     /**
      * Gets seller_input_definition.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\SellerInputDefinition
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\SellerInputDefinition
      */
     public function getSellerInputDefinition()
     {
@@ -226,7 +226,7 @@ class AdditionalInputs implements ModelInterface, ArrayAccess
     /**
      * Sets seller_input_definition.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\SellerInputDefinition $seller_input_definition seller_input_definition
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\SellerInputDefinition $seller_input_definition seller_input_definition
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetAdditionalSellerInputsRequest Class Doc Comment.
@@ -46,9 +46,9 @@ class GetAdditionalSellerInputsRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'shipping_service_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier',
-'ship_from_address' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address',
-'order_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AmazonOrderId',    ];
+        'shipping_service_id' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier',
+'ship_from_address' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address',
+'order_id' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AmazonOrderId',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -208,7 +208,7 @@ class GetAdditionalSellerInputsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_service_id.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier
      */
     public function getShippingServiceId()
     {
@@ -218,7 +218,7 @@ class GetAdditionalSellerInputsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_service_id.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier $shipping_service_id shipping_service_id
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier $shipping_service_id shipping_service_id
      *
      * @return $this
      */
@@ -232,7 +232,7 @@ class GetAdditionalSellerInputsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address
      */
     public function getShipFromAddress()
     {
@@ -242,7 +242,7 @@ class GetAdditionalSellerInputsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_address.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address $ship_from_address ship_from_address
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address $ship_from_address ship_from_address
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class GetAdditionalSellerInputsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets order_id.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AmazonOrderId
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AmazonOrderId
      */
     public function getOrderId()
     {
@@ -266,7 +266,7 @@ class GetAdditionalSellerInputsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets order_id.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AmazonOrderId $order_id order_id
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AmazonOrderId $order_id order_id
      *
      * @return $this
      */

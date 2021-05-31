@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * InboundShipmentHeader Class Doc Comment.
@@ -47,12 +47,12 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'shipment_name' => 'string',
-'ship_from_address' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Address',
+'ship_from_address' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Address',
 'destination_fulfillment_center_id' => 'string',
 'are_cases_required' => 'bool',
-'shipment_status' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentStatus',
-'label_prep_preference' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\LabelPrepPreference',
-'intended_box_contents_source' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\IntendedBoxContentsSource',    ];
+'shipment_status' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentStatus',
+'label_prep_preference' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\LabelPrepPreference',
+'intended_box_contents_source' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\IntendedBoxContentsSource',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -262,7 +262,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Address
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Address
      */
     public function getShipFromAddress()
     {
@@ -272,7 +272,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_address.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Address $ship_from_address ship_from_address
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Address $ship_from_address ship_from_address
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_status.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentStatus
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentStatus
      */
     public function getShipmentStatus()
     {
@@ -344,7 +344,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_status.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentStatus $shipment_status shipment_status
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentStatus $shipment_status shipment_status
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets label_prep_preference.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\LabelPrepPreference
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\LabelPrepPreference
      */
     public function getLabelPrepPreference()
     {
@@ -368,7 +368,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets label_prep_preference.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\LabelPrepPreference $label_prep_preference label_prep_preference
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\LabelPrepPreference $label_prep_preference label_prep_preference
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets intended_box_contents_source.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\IntendedBoxContentsSource
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\IntendedBoxContentsSource
      */
     public function getIntendedBoxContentsSource()
     {
@@ -392,7 +392,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets intended_box_contents_source.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\IntendedBoxContentsSource $intended_box_contents_source intended_box_contents_source
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\IntendedBoxContentsSource $intended_box_contents_source intended_box_contents_source
      *
      * @return $this
      */

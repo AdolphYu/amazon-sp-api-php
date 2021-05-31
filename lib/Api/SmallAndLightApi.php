@@ -13,15 +13,15 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Api;
+namespace AdolphYu\AmazonSellingPartnerAPI\Api;
 
-use ClouSale\AmazonSellingPartnerAPI\Configuration;
-use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
-use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
-use ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibility;
-use ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment;
-use ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviews;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Configuration;
+use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
+use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibility;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviews;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 
@@ -71,7 +71,7 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace in which to remove the item from the Small and Light program. Note: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
      * @return void
      */
@@ -87,7 +87,7 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace in which to remove the item from the Small and Light program. Note: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -191,9 +191,9 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace for which the eligibility status is retrieved. NOTE: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibility
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibility
      */
     public function getSmallAndLightEligibilityBySellerSKU($seller_sku, $marketplace_ids)
     {
@@ -209,9 +209,9 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace for which the eligibility status is retrieved. NOTE: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibility, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibility, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSmallAndLightEligibilityBySellerSKUWithHttpInfo($seller_sku, $marketplace_ids)
     {
@@ -312,9 +312,9 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace for which the enrollment status is retrieved. Note: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment
      */
     public function getSmallAndLightEnrollmentBySellerSKU($seller_sku, $marketplace_ids)
     {
@@ -330,9 +330,9 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace for which the enrollment status is retrieved. Note: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSmallAndLightEnrollmentBySellerSKUWithHttpInfo($seller_sku, $marketplace_ids)
     {
@@ -373,7 +373,7 @@ class SmallAndLightApi
      */
     public function getSmallAndLightEnrollmentBySellerSKUAsyncWithHttpInfo($seller_sku, $marketplace_ids)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment';
         $request = $this->getSmallAndLightEnrollmentBySellerSKURequest($seller_sku, $marketplace_ids);
 
         return $this->sendRequestAsync($request, SmallAndLightEnrollment::class);
@@ -430,12 +430,12 @@ class SmallAndLightApi
     /**
      * Operation getSmallAndLightFeePreview.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviews
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviews
      */
     public function getSmallAndLightFeePreview($body)
     {
@@ -447,12 +447,12 @@ class SmallAndLightApi
     /**
      * Operation getSmallAndLightFeePreviewWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviews, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviews, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSmallAndLightFeePreviewWithHttpInfo($body)
     {
@@ -464,7 +464,7 @@ class SmallAndLightApi
     /**
      * Operation getSmallAndLightFeePreviewAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -483,7 +483,7 @@ class SmallAndLightApi
     /**
      * Operation getSmallAndLightFeePreviewAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -499,7 +499,7 @@ class SmallAndLightApi
     /**
      * Create request for operation 'getSmallAndLightFeePreview'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightFeePreviewRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -529,9 +529,9 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace in which to enroll the item. Note: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment
      */
     public function putSmallAndLightEnrollmentBySellerSKU($seller_sku, $marketplace_ids)
     {
@@ -547,9 +547,9 @@ class SmallAndLightApi
      * @param string[] $marketplace_ids The marketplace in which to enroll the item. Note: Accepts a single marketplace only. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEnrollment, HTTP status code, HTTP response headers (array of strings)
      */
     public function putSmallAndLightEnrollmentBySellerSKUWithHttpInfo($seller_sku, $marketplace_ids)
     {

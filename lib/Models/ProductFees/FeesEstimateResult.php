@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductFees;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * FeesEstimateResult Class Doc Comment.
@@ -47,9 +47,9 @@ class FeesEstimateResult implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'status' => 'string',
-'fees_estimate_identifier' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateIdentifier',
-'fees_estimate' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimate',
-'error' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateError',    ];
+'fees_estimate_identifier' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateIdentifier',
+'fees_estimate' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimate',
+'error' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateError',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -228,7 +228,7 @@ class FeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Gets fees_estimate_identifier.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateIdentifier
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateIdentifier
      */
     public function getFeesEstimateIdentifier()
     {
@@ -238,7 +238,7 @@ class FeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Sets fees_estimate_identifier.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateIdentifier $fees_estimate_identifier fees_estimate_identifier
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateIdentifier $fees_estimate_identifier fees_estimate_identifier
      *
      * @return $this
      */
@@ -252,7 +252,7 @@ class FeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Gets fees_estimate.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimate
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimate
      */
     public function getFeesEstimate()
     {
@@ -262,7 +262,7 @@ class FeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Sets fees_estimate.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimate $fees_estimate fees_estimate
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimate $fees_estimate fees_estimate
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class FeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Gets error.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateError
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateError
      */
     public function getError()
     {
@@ -286,7 +286,7 @@ class FeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Sets error.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateError $error error
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateError $error error
      *
      * @return $this
      */

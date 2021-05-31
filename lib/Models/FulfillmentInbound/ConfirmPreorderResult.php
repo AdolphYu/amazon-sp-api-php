@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ConfirmPreorderResult Class Doc Comment.
@@ -43,8 +43,8 @@ class ConfirmPreorderResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'confirmed_need_by_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',
-'confirmed_fulfillable_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',    ];
+        'confirmed_need_by_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',
+'confirmed_fulfillable_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -189,7 +189,7 @@ class ConfirmPreorderResult implements ModelInterface, ArrayAccess
     /**
      * Gets confirmed_need_by_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
      */
     public function getConfirmedNeedByDate()
     {
@@ -199,7 +199,7 @@ class ConfirmPreorderResult implements ModelInterface, ArrayAccess
     /**
      * Sets confirmed_need_by_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $confirmed_need_by_date confirmed_need_by_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $confirmed_need_by_date confirmed_need_by_date
      *
      * @return $this
      */
@@ -213,7 +213,7 @@ class ConfirmPreorderResult implements ModelInterface, ArrayAccess
     /**
      * Gets confirmed_fulfillable_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
      */
     public function getConfirmedFulfillableDate()
     {
@@ -223,7 +223,7 @@ class ConfirmPreorderResult implements ModelInterface, ArrayAccess
     /**
      * Sets confirmed_fulfillable_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $confirmed_fulfillable_date confirmed_fulfillable_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $confirmed_fulfillable_date confirmed_fulfillable_date
      *
      * @return $this
      */

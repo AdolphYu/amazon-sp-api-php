@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetPreorderInfoResult Class Doc Comment.
@@ -45,8 +45,8 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipment_contains_preorderable_items' => 'bool',
 'shipment_confirmed_for_preorder' => 'bool',
-'need_by_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',
-'confirmed_fulfillable_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',    ];
+'need_by_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',
+'confirmed_fulfillable_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -249,7 +249,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Gets need_by_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
      */
     public function getNeedByDate()
     {
@@ -259,7 +259,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Sets need_by_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $need_by_date need_by_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $need_by_date need_by_date
      *
      * @return $this
      */
@@ -273,7 +273,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Gets confirmed_fulfillable_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType
      */
     public function getConfirmedFulfillableDate()
     {
@@ -283,7 +283,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Sets confirmed_fulfillable_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $confirmed_fulfillable_date confirmed_fulfillable_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\DateStringType $confirmed_fulfillable_date confirmed_fulfillable_date
      *
      * @return $this
      */

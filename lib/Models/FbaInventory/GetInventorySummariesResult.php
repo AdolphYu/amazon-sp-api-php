@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetInventorySummariesResult Class Doc Comment.
@@ -46,8 +46,8 @@ class GetInventorySummariesResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'granularity' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\Granularity',
-'inventory_summaries' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\InventorySummaries',    ];
+        'granularity' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\Granularity',
+'inventory_summaries' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\InventorySummaries',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -199,7 +199,7 @@ class GetInventorySummariesResult implements ModelInterface, ArrayAccess
     /**
      * Gets granularity.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\Granularity
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\Granularity
      */
     public function getGranularity()
     {
@@ -209,7 +209,7 @@ class GetInventorySummariesResult implements ModelInterface, ArrayAccess
     /**
      * Sets granularity.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\Granularity $granularity granularity
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\Granularity $granularity granularity
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class GetInventorySummariesResult implements ModelInterface, ArrayAccess
     /**
      * Gets inventory_summaries.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\InventorySummaries
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\InventorySummaries
      */
     public function getInventorySummaries()
     {
@@ -233,7 +233,7 @@ class GetInventorySummariesResult implements ModelInterface, ArrayAccess
     /**
      * Sets inventory_summaries.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\InventorySummaries $inventory_summaries inventory_summaries
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\InventorySummaries $inventory_summaries inventory_summaries
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Summary Class Doc Comment.
@@ -47,12 +47,12 @@ class Summary implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'total_offer_count' => 'int',
-'number_of_offers' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOffers',
-'lowest_prices' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\LowestPrices',
-'buy_box_prices' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxPrices',
-'list_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
-'suggested_lower_price_plus_shipping' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
-'buy_box_eligible_offers' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxEligibleOffers',
+'number_of_offers' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOffers',
+'lowest_prices' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\LowestPrices',
+'buy_box_prices' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxPrices',
+'list_price' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
+'suggested_lower_price_plus_shipping' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
+'buy_box_eligible_offers' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxEligibleOffers',
 'offers_available_time' => '\DateTime',    ];
 
     /**
@@ -256,7 +256,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets number_of_offers.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOffers
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOffers
      */
     public function getNumberOfOffers()
     {
@@ -266,7 +266,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets number_of_offers.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOffers $number_of_offers number_of_offers
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOffers $number_of_offers number_of_offers
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets lowest_prices.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\LowestPrices
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\LowestPrices
      */
     public function getLowestPrices()
     {
@@ -290,7 +290,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets lowest_prices.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\LowestPrices $lowest_prices lowest_prices
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\LowestPrices $lowest_prices lowest_prices
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets buy_box_prices.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxPrices
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxPrices
      */
     public function getBuyBoxPrices()
     {
@@ -314,7 +314,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets buy_box_prices.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxPrices $buy_box_prices buy_box_prices
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxPrices $buy_box_prices buy_box_prices
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets list_price.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
      */
     public function getListPrice()
     {
@@ -338,7 +338,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets list_price.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $list_price list_price
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $list_price list_price
      *
      * @return $this
      */
@@ -352,7 +352,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets suggested_lower_price_plus_shipping.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
      */
     public function getSuggestedLowerPricePlusShipping()
     {
@@ -362,7 +362,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets suggested_lower_price_plus_shipping.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $suggested_lower_price_plus_shipping suggested_lower_price_plus_shipping
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $suggested_lower_price_plus_shipping suggested_lower_price_plus_shipping
      *
      * @return $this
      */
@@ -376,7 +376,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets buy_box_eligible_offers.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxEligibleOffers
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxEligibleOffers
      */
     public function getBuyBoxEligibleOffers()
     {
@@ -386,7 +386,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets buy_box_eligible_offers.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxEligibleOffers $buy_box_eligible_offers buy_box_eligible_offers
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\BuyBoxEligibleOffers $buy_box_eligible_offers buy_box_eligible_offers
      *
      * @return $this
      */

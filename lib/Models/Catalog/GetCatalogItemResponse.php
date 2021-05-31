@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Catalog;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Catalog;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetCatalogItemResponse Class Doc Comment.
@@ -43,8 +43,8 @@ class GetCatalogItemResponse extends Categories implements ModelInterface, Array
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\Catalog\Item',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\Catalog\ErrorList',    ];
+        'payload' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\Item',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -189,7 +189,7 @@ class GetCatalogItemResponse extends Categories implements ModelInterface, Array
     /**
      * Gets payload.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Catalog\Item
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\Item
      */
     public function getPayload()
     {
@@ -199,7 +199,7 @@ class GetCatalogItemResponse extends Categories implements ModelInterface, Array
     /**
      * Sets payload.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Catalog\Item $payload payload
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\Item $payload payload
      *
      * @return $this
      */
@@ -213,7 +213,7 @@ class GetCatalogItemResponse extends Categories implements ModelInterface, Array
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Catalog\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ErrorList
      */
     public function getErrors()
     {
@@ -223,7 +223,7 @@ class GetCatalogItemResponse extends Categories implements ModelInterface, Array
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Catalog\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ErrorList $errors errors
      *
      * @return $this
      */

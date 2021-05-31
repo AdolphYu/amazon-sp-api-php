@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Shipping;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Shipping;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ContainerSpecification Class Doc Comment.
@@ -46,8 +46,8 @@ class ContainerSpecification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'dimensions' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\Dimensions',
-'weight' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\Weight',    ];
+        'dimensions' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\Dimensions',
+'weight' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\Weight',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -199,7 +199,7 @@ class ContainerSpecification implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\Dimensions
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\Dimensions
      */
     public function getDimensions()
     {
@@ -209,7 +209,7 @@ class ContainerSpecification implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\Dimensions $dimensions dimensions
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\Dimensions $dimensions dimensions
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class ContainerSpecification implements ModelInterface, ArrayAccess
     /**
      * Gets weight.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\Weight
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\Weight
      */
     public function getWeight()
     {
@@ -233,7 +233,7 @@ class ContainerSpecification implements ModelInterface, ArrayAccess
     /**
      * Sets weight.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\Weight $weight weight
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\Weight $weight weight
      *
      * @return $this
      */

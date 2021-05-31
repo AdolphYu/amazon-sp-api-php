@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * LoanServicingEvent Class Doc Comment.
@@ -46,7 +46,7 @@ class LoanServicingEvent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'loan_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
+        'loan_amount' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency',
 'source_business_event_type' => 'string',    ];
 
     /**
@@ -192,7 +192,7 @@ class LoanServicingEvent implements ModelInterface, ArrayAccess
     /**
      * Gets loan_amount.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency
      */
     public function getLoanAmount()
     {
@@ -202,7 +202,7 @@ class LoanServicingEvent implements ModelInterface, ArrayAccess
     /**
      * Sets loan_amount.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency $loan_amount loan_amount
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency $loan_amount loan_amount
      *
      * @return $this
      */

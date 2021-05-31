@@ -15,7 +15,7 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
 
 /**
  * StandardIdForLabel Class Doc Comment.

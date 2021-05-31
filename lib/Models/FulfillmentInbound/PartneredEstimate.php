@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * PartneredEstimate Class Doc Comment.
@@ -46,9 +46,9 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Amount',
-'confirm_deadline' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType',
-'void_deadline' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType',    ];
+        'amount' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Amount',
+'confirm_deadline' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType',
+'void_deadline' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -202,7 +202,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Gets amount.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Amount
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Amount
      */
     public function getAmount()
     {
@@ -212,7 +212,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Sets amount.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Amount $amount amount
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Amount $amount amount
      *
      * @return $this
      */
@@ -226,7 +226,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Gets confirm_deadline.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType
      */
     public function getConfirmDeadline()
     {
@@ -236,7 +236,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Sets confirm_deadline.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType $confirm_deadline confirm_deadline
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType $confirm_deadline confirm_deadline
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Gets void_deadline.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType
      */
     public function getVoidDeadline()
     {
@@ -260,7 +260,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Sets void_deadline.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType $void_deadline void_deadline
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TimeStampStringType $void_deadline void_deadline
      *
      * @return $this
      */

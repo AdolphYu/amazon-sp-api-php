@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Shipping;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Shipping;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * TrackingInformation Class Doc Comment.
@@ -46,10 +46,10 @@ class TrackingInformation implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'tracking_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\TrackingId',
-'summary' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\TrackingSummary',
-'promised_delivery_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\PromisedDeliveryDate',
-'event_history' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\EventList',    ];
+        'tracking_id' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\TrackingId',
+'summary' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\TrackingSummary',
+'promised_delivery_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\PromisedDeliveryDate',
+'event_history' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\EventList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -217,7 +217,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_id.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\TrackingId
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\TrackingId
      */
     public function getTrackingId()
     {
@@ -227,7 +227,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets tracking_id.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\TrackingId $tracking_id tracking_id
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\TrackingId $tracking_id tracking_id
      *
      * @return $this
      */
@@ -241,7 +241,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Gets summary.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\TrackingSummary
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\TrackingSummary
      */
     public function getSummary()
     {
@@ -251,7 +251,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets summary.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\TrackingSummary $summary summary
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\TrackingSummary $summary summary
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Gets promised_delivery_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\PromisedDeliveryDate
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\PromisedDeliveryDate
      */
     public function getPromisedDeliveryDate()
     {
@@ -275,7 +275,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets promised_delivery_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\PromisedDeliveryDate $promised_delivery_date promised_delivery_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\PromisedDeliveryDate $promised_delivery_date promised_delivery_date
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Gets event_history.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\EventList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\EventList
      */
     public function getEventHistory()
     {
@@ -299,7 +299,7 @@ class TrackingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets event_history.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\EventList $event_history event_history
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\EventList $event_history event_history
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaInboundEligibility;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaInboundEligibility;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetItemEligibilityPreviewResponse Class Doc Comment.
@@ -46,8 +46,8 @@ class GetItemEligibilityPreviewResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ItemEligibilityPreview',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ErrorList',    ];
+        'payload' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ItemEligibilityPreview',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class GetItemEligibilityPreviewResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ItemEligibilityPreview
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ItemEligibilityPreview
      */
     public function getPayload()
     {
@@ -202,7 +202,7 @@ class GetItemEligibilityPreviewResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ItemEligibilityPreview $payload payload
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ItemEligibilityPreview $payload payload
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class GetItemEligibilityPreviewResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ErrorList
      */
     public function getErrors()
     {
@@ -226,7 +226,7 @@ class GetItemEligibilityPreviewResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInboundEligibility\ErrorList $errors errors
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * FeePreview Class Doc Comment.
@@ -47,10 +47,10 @@ class FeePreview implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'asin' => 'string',
-'price' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType',
-'fee_breakdown' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeeLineItem[]',
-'total_fees' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\ErrorList',    ];
+'price' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType',
+'fee_breakdown' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeeLineItem[]',
+'total_fees' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -234,7 +234,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Gets price.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType
      */
     public function getPrice()
     {
@@ -244,7 +244,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Sets price.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType $price price
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType $price price
      *
      * @return $this
      */
@@ -258,7 +258,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Gets fee_breakdown.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeeLineItem[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeeLineItem[]
      */
     public function getFeeBreakdown()
     {
@@ -268,7 +268,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Sets fee_breakdown.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeeLineItem[] $fee_breakdown a list of the Small and Light fees for the item
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeeLineItem[] $fee_breakdown a list of the Small and Light fees for the item
      *
      * @return $this
      */
@@ -282,7 +282,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Gets total_fees.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType
      */
     public function getTotalFees()
     {
@@ -292,7 +292,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Sets total_fees.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType $total_fees total_fees
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType $total_fees total_fees
      *
      * @return $this
      */
@@ -306,7 +306,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\ErrorList
      */
     public function getErrors()
     {
@@ -316,7 +316,7 @@ class FeePreview implements ModelInterface, ArrayAccess
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\ErrorList $errors errors
      *
      * @return $this
      */

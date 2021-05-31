@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SAFETReimbursementItem Class Doc Comment.
@@ -46,7 +46,7 @@ class SAFETReimbursementItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'item_charge_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList',
+        'item_charge_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList',
 'product_description' => 'string',
 'quantity' => 'string',    ];
 
@@ -198,7 +198,7 @@ class SAFETReimbursementItem implements ModelInterface, ArrayAccess
     /**
      * Gets item_charge_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList
      */
     public function getItemChargeList()
     {
@@ -208,7 +208,7 @@ class SAFETReimbursementItem implements ModelInterface, ArrayAccess
     /**
      * Sets item_charge_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList $item_charge_list item_charge_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList $item_charge_list item_charge_list
      *
      * @return $this
      */

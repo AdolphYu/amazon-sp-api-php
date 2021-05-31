@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * TaxWithheldComponent Class Doc Comment.
@@ -47,7 +47,7 @@ class TaxWithheldComponent implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'tax_collection_model' => 'string',
-'taxes_withheld' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList',    ];
+'taxes_withheld' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -216,7 +216,7 @@ class TaxWithheldComponent implements ModelInterface, ArrayAccess
     /**
      * Gets taxes_withheld.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList
      */
     public function getTaxesWithheld()
     {
@@ -226,7 +226,7 @@ class TaxWithheldComponent implements ModelInterface, ArrayAccess
     /**
      * Sets taxes_withheld.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList $taxes_withheld taxes_withheld
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList $taxes_withheld taxes_withheld
      *
      * @return $this
      */

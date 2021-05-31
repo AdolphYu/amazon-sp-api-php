@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OfferDetail Class Doc Comment.
@@ -45,12 +45,12 @@ class OfferDetail implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'my_offer' => 'bool',
 'sub_condition' => 'string',
-'seller_feedback_rating' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\SellerFeedbackType',
-'shipping_time' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\DetailedShippingTimeType',
-'listing_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
-'points' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\Points',
-'shipping' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
-'ships_from' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ShipsFromType',
+'seller_feedback_rating' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\SellerFeedbackType',
+'shipping_time' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\DetailedShippingTimeType',
+'listing_price' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
+'points' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\Points',
+'shipping' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',
+'ships_from' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ShipsFromType',
 'is_fulfilled_by_amazon' => 'bool',
 'is_buy_box_winner' => 'bool',
 'is_featured_merchant' => 'bool',    ];
@@ -307,7 +307,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Gets seller_feedback_rating.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\SellerFeedbackType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\SellerFeedbackType
      */
     public function getSellerFeedbackRating()
     {
@@ -317,7 +317,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Sets seller_feedback_rating.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\SellerFeedbackType $seller_feedback_rating seller_feedback_rating
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\SellerFeedbackType $seller_feedback_rating seller_feedback_rating
      *
      * @return $this
      */
@@ -331,7 +331,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_time.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\DetailedShippingTimeType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\DetailedShippingTimeType
      */
     public function getShippingTime()
     {
@@ -341,7 +341,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_time.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\DetailedShippingTimeType $shipping_time shipping_time
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\DetailedShippingTimeType $shipping_time shipping_time
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Gets listing_price.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
      */
     public function getListingPrice()
     {
@@ -365,7 +365,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Sets listing_price.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $listing_price listing_price
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $listing_price listing_price
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Gets points.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\Points
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\Points
      */
     public function getPoints()
     {
@@ -389,7 +389,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Sets points.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\Points $points points
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\Points $points points
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Gets shipping.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
      */
     public function getShipping()
     {
@@ -413,7 +413,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Sets shipping.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $shipping shipping
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $shipping shipping
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Gets ships_from.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ShipsFromType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ShipsFromType
      */
     public function getShipsFrom()
     {
@@ -437,7 +437,7 @@ class OfferDetail implements ModelInterface, ArrayAccess
     /**
      * Sets ships_from.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ShipsFromType $ships_from ships_from
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ShipsFromType $ships_from ships_from
      *
      * @return $this
      */

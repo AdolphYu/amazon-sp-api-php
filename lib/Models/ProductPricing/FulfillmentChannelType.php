@@ -15,7 +15,7 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing;
 
 /**
  * FulfillmentChannelType Class Doc Comment.

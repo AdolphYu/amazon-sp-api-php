@@ -15,12 +15,12 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Orders;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Orders;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\IterableType;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\IterableType;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderItemsBuyerInfoList Class Doc Comment.
@@ -47,7 +47,7 @@ class OrderItemsBuyerInfoList implements ModelInterface, ArrayAccess, IterableTy
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'order_items' => '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderItemBuyerInfoList',
+        'order_items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderItemBuyerInfoList',
 'next_token' => 'string',
 'amazon_order_id' => 'string',    ];
 
@@ -206,7 +206,7 @@ class OrderItemsBuyerInfoList implements ModelInterface, ArrayAccess, IterableTy
     /**
      * Gets order_items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderItemBuyerInfoList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderItemBuyerInfoList
      */
     public function getOrderItems()
     {
@@ -216,7 +216,7 @@ class OrderItemsBuyerInfoList implements ModelInterface, ArrayAccess, IterableTy
     /**
      * Sets order_items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderItemBuyerInfoList $order_items order_items
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderItemBuyerInfoList $order_items order_items
      *
      * @return $this
      */

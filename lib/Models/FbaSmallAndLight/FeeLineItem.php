@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * FeeLineItem Class Doc Comment.
@@ -47,7 +47,7 @@ class FeeLineItem implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'fee_type' => 'string',
-'fee_charge' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType',    ];
+'fee_charge' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -254,7 +254,7 @@ self::FEE_TYPE_COMMISSION,        ];
     /**
      * Gets fee_charge.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType
      */
     public function getFeeCharge()
     {
@@ -264,7 +264,7 @@ self::FEE_TYPE_COMMISSION,        ];
     /**
      * Sets fee_charge.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType $fee_charge fee_charge
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MoneyType $fee_charge fee_charge
      *
      * @return $this
      */

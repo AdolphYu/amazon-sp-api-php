@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-09-04
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Reports;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Reports;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CreateReportScheduleSpecification Class Doc Comment.
@@ -45,7 +45,7 @@ class CreateReportScheduleSpecification implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'report_type' => 'string',
 'marketplace_ids' => 'string[]',
-'report_options' => '\ClouSale\AmazonSellingPartnerAPI\Models\Reports\ReportOptions',
+'report_options' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Reports\ReportOptions',
 'period' => 'string',
 'next_report_creation_time' => '\DateTime',    ];
 
@@ -319,7 +319,7 @@ self::PERIOD_P1_M,        ];
     /**
      * Gets report_options.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Reports\ReportOptions
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Reports\ReportOptions
      */
     public function getReportOptions()
     {
@@ -329,7 +329,7 @@ self::PERIOD_P1_M,        ];
     /**
      * Sets report_options.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Reports\ReportOptions $report_options report_options
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Reports\ReportOptions $report_options report_options
      *
      * @return $this
      */

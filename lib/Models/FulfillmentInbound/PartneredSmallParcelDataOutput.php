@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * PartneredSmallParcelDataOutput Class Doc Comment.
@@ -46,8 +46,8 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'package_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelPackageOutputList',
-'partnered_estimate' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredEstimate',    ];
+        'package_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelPackageOutputList',
+'partnered_estimate' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredEstimate',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -196,7 +196,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets package_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelPackageOutputList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelPackageOutputList
      */
     public function getPackageList()
     {
@@ -206,7 +206,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets package_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelPackageOutputList $package_list package_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelPackageOutputList $package_list package_list
      *
      * @return $this
      */
@@ -220,7 +220,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets partnered_estimate.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredEstimate
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredEstimate
      */
     public function getPartneredEstimate()
     {
@@ -230,7 +230,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets partnered_estimate.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredEstimate $partnered_estimate partnered_estimate
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredEstimate $partnered_estimate partnered_estimate
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CommonTransportResult Class Doc Comment.
@@ -43,7 +43,7 @@ class CommonTransportResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'transport_result' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportResult',    ];
+        'transport_result' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportResult',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -183,7 +183,7 @@ class CommonTransportResult implements ModelInterface, ArrayAccess
     /**
      * Gets transport_result.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportResult
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportResult
      */
     public function getTransportResult()
     {
@@ -193,7 +193,7 @@ class CommonTransportResult implements ModelInterface, ArrayAccess
     /**
      * Sets transport_result.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportResult $transport_result transport_result
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportResult $transport_result transport_result
      *
      * @return $this
      */

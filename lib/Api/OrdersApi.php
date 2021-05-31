@@ -13,18 +13,18 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Api;
+namespace AdolphYu\AmazonSellingPartnerAPI\Api;
 
-use ClouSale\AmazonSellingPartnerAPI\Configuration;
-use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
-use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
-use ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderBuyerInfoResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Configuration;
+use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
+use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderBuyerInfoResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 
@@ -73,9 +73,9 @@ class OrdersApi
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse
      */
     public function getOrder($order_id)
     {
@@ -90,9 +90,9 @@ class OrdersApi
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderWithHttpInfo($order_id)
     {
@@ -131,7 +131,7 @@ class OrdersApi
      */
     public function getOrderAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse';
         $request = $this->getOrderRequest($order_id);
 
         return $this->sendRequestAsync($request, GetOrderResponse::class);
@@ -178,9 +178,9 @@ class OrdersApi
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse
      */
     public function getOrderAddress($order_id)
     {
@@ -195,13 +195,13 @@ class OrdersApi
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderAddressWithHttpInfo($order_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse';
         $request = $this->getOrderAddressRequest($order_id);
 
         return $this->sendRequest($request, GetOrderAddressResponse::class);
@@ -283,9 +283,9 @@ class OrdersApi
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderBuyerInfoResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderBuyerInfoResponse
      */
     public function getOrderBuyerInfo($order_id)
     {
@@ -300,9 +300,9 @@ class OrdersApi
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderBuyerInfoWithHttpInfo($order_id)
     {
@@ -388,9 +388,9 @@ class OrdersApi
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse
      */
     public function getOrderItems($order_id, $next_token = null)
     {
@@ -406,9 +406,9 @@ class OrdersApi
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderItemsWithHttpInfo($order_id, $next_token = null)
     {
@@ -449,7 +449,7 @@ class OrdersApi
      */
     public function getOrderItemsAsyncWithHttpInfo($order_id, $next_token = null)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse';
         $request = $this->getOrderItemsRequest($order_id, $next_token);
 
         return $this->sendRequestAsync($request, GetOrderItemsResponse::class);
@@ -503,9 +503,9 @@ class OrdersApi
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse
      */
     public function getOrderItemsBuyerInfo($order_id, $next_token = null)
     {
@@ -521,9 +521,9 @@ class OrdersApi
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderItemsBuyerInfoWithHttpInfo($order_id, $next_token = null)
     {
@@ -564,7 +564,7 @@ class OrdersApi
      */
     public function getOrderItemsBuyerInfoAsyncWithHttpInfo($order_id, $next_token = null)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse';
         $request = $this->getOrderItemsBuyerInfoRequest($order_id, $next_token);
 
         return $this->sendRequestAsync($request, GetOrderItemsBuyerInfoResponse::class);
@@ -629,10 +629,10 @@ class OrdersApi
      * @param string   $next_token                  A string token returned in the response of your previous request. (optional)
      * @param string[] $amazon_order_ids            A list of AmazonOrderId values. An AmazonOrderId is an Amazon-defined order identifier, in 3-7-7 format. (optional)
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse
      */
     public function getOrders($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $next_token = null, $amazon_order_ids = null)
     {
@@ -659,14 +659,14 @@ class OrdersApi
      * @param string   $next_token                  A string token returned in the response of your previous request. (optional)
      * @param string[] $amazon_order_ids            A list of AmazonOrderId values. An AmazonOrderId is an Amazon-defined order identifier, in 3-7-7 format. (optional)
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersWithHttpInfo($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $next_token = null, $amazon_order_ids = null)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
 
         return $this->sendRequest($request, GetOrdersResponse::class);
@@ -728,7 +728,7 @@ class OrdersApi
      */
     public function getOrdersAsyncWithHttpInfo($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $next_token = null, $amazon_order_ids = null)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
 
         return $this->sendRequestAsync($request, GetOrdersResponse::class);

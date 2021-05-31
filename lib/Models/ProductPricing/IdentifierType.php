@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * IdentifierType Class Doc Comment.
@@ -46,8 +46,8 @@ class IdentifierType implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'marketplace_asin' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ASINIdentifier',
-'sku_identifier' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\SellerSKUIdentifier',    ];
+        'marketplace_asin' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ASINIdentifier',
+'sku_identifier' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\SellerSKUIdentifier',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -196,7 +196,7 @@ class IdentifierType implements ModelInterface, ArrayAccess
     /**
      * Gets marketplace_asin.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ASINIdentifier
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ASINIdentifier
      */
     public function getMarketplaceAsin()
     {
@@ -206,7 +206,7 @@ class IdentifierType implements ModelInterface, ArrayAccess
     /**
      * Sets marketplace_asin.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ASINIdentifier $marketplace_asin marketplace_asin
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ASINIdentifier $marketplace_asin marketplace_asin
      *
      * @return $this
      */
@@ -220,7 +220,7 @@ class IdentifierType implements ModelInterface, ArrayAccess
     /**
      * Gets sku_identifier.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\SellerSKUIdentifier
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\SellerSKUIdentifier
      */
     public function getSkuIdentifier()
     {
@@ -230,7 +230,7 @@ class IdentifierType implements ModelInterface, ArrayAccess
     /**
      * Sets sku_identifier.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\SellerSKUIdentifier $sku_identifier sku_identifier
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\SellerSKUIdentifier $sku_identifier sku_identifier
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * PrepDetails Class Doc Comment.
@@ -46,8 +46,8 @@ class PrepDetails implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'prep_instruction' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstruction',
-'prep_owner' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepOwner',    ];
+        'prep_instruction' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstruction',
+'prep_owner' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepOwner',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -199,7 +199,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Gets prep_instruction.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstruction
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstruction
      */
     public function getPrepInstruction()
     {
@@ -209,7 +209,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Sets prep_instruction.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstruction $prep_instruction prep_instruction
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstruction $prep_instruction prep_instruction
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Gets prep_owner.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepOwner
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepOwner
      */
     public function getPrepOwner()
     {
@@ -233,7 +233,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Sets prep_owner.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepOwner $prep_owner prep_owner
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepOwner $prep_owner prep_owner
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SmallAndLightFeePreviews Class Doc Comment.
@@ -43,7 +43,7 @@ class SmallAndLightFeePreviews implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'data' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeePreview[]',    ];
+        'data' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeePreview[]',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -183,7 +183,7 @@ class SmallAndLightFeePreviews implements ModelInterface, ArrayAccess
     /**
      * Gets data.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeePreview[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeePreview[]
      */
     public function getData()
     {
@@ -193,7 +193,7 @@ class SmallAndLightFeePreviews implements ModelInterface, ArrayAccess
     /**
      * Sets data.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeePreview[] $data A list of fee estimates for the requested items. The order of the fee estimates will follow the same order as the items in the request, with duplicates removed.
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\FeePreview[] $data A list of fee estimates for the requested items. The order of the fee estimates will follow the same order as the items in the request, with duplicates removed.
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * TransportDetailOutput Class Doc Comment.
@@ -46,10 +46,10 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'partnered_small_parcel_data' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelDataOutput',
-'non_partnered_small_parcel_data' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelDataOutput',
-'partnered_ltl_data' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredLtlDataOutput',
-'non_partnered_ltl_data' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredLtlDataOutput',    ];
+        'partnered_small_parcel_data' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelDataOutput',
+'non_partnered_small_parcel_data' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelDataOutput',
+'partnered_ltl_data' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredLtlDataOutput',
+'non_partnered_ltl_data' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredLtlDataOutput',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -204,7 +204,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Gets partnered_small_parcel_data.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelDataOutput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelDataOutput
      */
     public function getPartneredSmallParcelData()
     {
@@ -214,7 +214,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Sets partnered_small_parcel_data.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelDataOutput $partnered_small_parcel_data partnered_small_parcel_data
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredSmallParcelDataOutput $partnered_small_parcel_data partnered_small_parcel_data
      *
      * @return $this
      */
@@ -228,7 +228,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Gets non_partnered_small_parcel_data.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelDataOutput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelDataOutput
      */
     public function getNonPartneredSmallParcelData()
     {
@@ -238,7 +238,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Sets non_partnered_small_parcel_data.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelDataOutput $non_partnered_small_parcel_data non_partnered_small_parcel_data
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelDataOutput $non_partnered_small_parcel_data non_partnered_small_parcel_data
      *
      * @return $this
      */
@@ -252,7 +252,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Gets partnered_ltl_data.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredLtlDataOutput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredLtlDataOutput
      */
     public function getPartneredLtlData()
     {
@@ -262,7 +262,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Sets partnered_ltl_data.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredLtlDataOutput $partnered_ltl_data partnered_ltl_data
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PartneredLtlDataOutput $partnered_ltl_data partnered_ltl_data
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Gets non_partnered_ltl_data.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredLtlDataOutput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredLtlDataOutput
      */
     public function getNonPartneredLtlData()
     {
@@ -286,7 +286,7 @@ class TransportDetailOutput implements ModelInterface, ArrayAccess
     /**
      * Sets non_partnered_ltl_data.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredLtlDataOutput $non_partnered_ltl_data non_partnered_ltl_data
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredLtlDataOutput $non_partnered_ltl_data non_partnered_ltl_data
      *
      * @return $this
      */

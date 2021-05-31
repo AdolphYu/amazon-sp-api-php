@@ -15,7 +15,7 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI;
+namespace AdolphYu\AmazonSellingPartnerAPI;
 
 /**
  * ObjectSerializer Class Doc Comment.

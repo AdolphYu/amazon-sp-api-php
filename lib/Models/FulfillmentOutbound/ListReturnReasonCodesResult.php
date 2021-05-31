@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ListReturnReasonCodesResult Class Doc Comment.
@@ -43,7 +43,7 @@ class ListReturnReasonCodesResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'reason_code_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ReasonCodeDetailsList',    ];
+        'reason_code_details' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ReasonCodeDetailsList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -183,7 +183,7 @@ class ListReturnReasonCodesResult implements ModelInterface, ArrayAccess
     /**
      * Gets reason_code_details.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ReasonCodeDetailsList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ReasonCodeDetailsList
      */
     public function getReasonCodeDetails()
     {
@@ -193,7 +193,7 @@ class ListReturnReasonCodesResult implements ModelInterface, ArrayAccess
     /**
      * Sets reason_code_details.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ReasonCodeDetailsList $reason_code_details reason_code_details
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ReasonCodeDetailsList $reason_code_details reason_code_details
      *
      * @return $this
      */

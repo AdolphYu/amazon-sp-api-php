@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ASINPrepInstructions Class Doc Comment.
@@ -47,9 +47,9 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'asin' => 'string',
-'barcode_instruction' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction',
-'prep_guidance' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance',
-'prep_instruction_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList',    ];
+'barcode_instruction' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction',
+'prep_guidance' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance',
+'prep_instruction_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -228,7 +228,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets barcode_instruction.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction
      */
     public function getBarcodeInstruction()
     {
@@ -238,7 +238,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets barcode_instruction.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
      *
      * @return $this
      */
@@ -252,7 +252,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_guidance.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance
      */
     public function getPrepGuidance()
     {
@@ -262,7 +262,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_guidance.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_instruction_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList
      */
     public function getPrepInstructionList()
     {
@@ -286,7 +286,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_instruction_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList $prep_instruction_list prep_instruction_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList $prep_instruction_list prep_instruction_list
      *
      * @return $this
      */

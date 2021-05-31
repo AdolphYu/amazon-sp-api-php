@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ProductAdsPaymentEvent Class Doc Comment.
@@ -46,12 +46,12 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+        'posted_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
 'transaction_type' => 'string',
 'invoice_id' => 'string',
-'base_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'tax_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'transaction_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',    ];
+'base_value' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency',
+'tax_value' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency',
+'transaction_value' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -216,7 +216,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime
      */
     public function getPostedDate()
     {
@@ -226,7 +226,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
      *
      * @return $this
      */
@@ -288,7 +288,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets base_value.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency
      */
     public function getBaseValue()
     {
@@ -298,7 +298,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets base_value.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency $base_value base_value
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency $base_value base_value
      *
      * @return $this
      */
@@ -312,7 +312,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets tax_value.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency
      */
     public function getTaxValue()
     {
@@ -322,7 +322,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets tax_value.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency $tax_value tax_value
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency $tax_value tax_value
      *
      * @return $this
      */
@@ -336,7 +336,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets transaction_value.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency
      */
     public function getTransactionValue()
     {
@@ -346,7 +346,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets transaction_value.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency $transaction_value transaction_value
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency $transaction_value transaction_value
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * DeliveryWindow Class Doc Comment.
@@ -46,8 +46,8 @@ class DeliveryWindow implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'start_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
-'end_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',    ];
+        'start_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
+'end_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -199,7 +199,7 @@ class DeliveryWindow implements ModelInterface, ArrayAccess
     /**
      * Gets start_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
      */
     public function getStartDate()
     {
@@ -209,7 +209,7 @@ class DeliveryWindow implements ModelInterface, ArrayAccess
     /**
      * Sets start_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $start_date start_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $start_date start_date
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class DeliveryWindow implements ModelInterface, ArrayAccess
     /**
      * Gets end_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
      */
     public function getEndDate()
     {
@@ -233,7 +233,7 @@ class DeliveryWindow implements ModelInterface, ArrayAccess
     /**
      * Sets end_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $end_date end_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $end_date end_date
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ShippingOfferingFilter Class Doc Comment.
@@ -48,8 +48,8 @@ class ShippingOfferingFilter implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'include_packing_slip_with_label' => 'bool',
 'include_complex_shipping_options' => 'bool',
-'carrier_will_pick_up' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CarrierWillPickUpOption',
-'delivery_experience' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\DeliveryExperienceOption',    ];
+'carrier_will_pick_up' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CarrierWillPickUpOption',
+'delivery_experience' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\DeliveryExperienceOption',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -252,7 +252,7 @@ class ShippingOfferingFilter implements ModelInterface, ArrayAccess
     /**
      * Gets carrier_will_pick_up.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CarrierWillPickUpOption
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CarrierWillPickUpOption
      */
     public function getCarrierWillPickUp()
     {
@@ -262,7 +262,7 @@ class ShippingOfferingFilter implements ModelInterface, ArrayAccess
     /**
      * Sets carrier_will_pick_up.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CarrierWillPickUpOption $carrier_will_pick_up carrier_will_pick_up
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CarrierWillPickUpOption $carrier_will_pick_up carrier_will_pick_up
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class ShippingOfferingFilter implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_experience.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\DeliveryExperienceOption
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\DeliveryExperienceOption
      */
     public function getDeliveryExperience()
     {
@@ -286,7 +286,7 @@ class ShippingOfferingFilter implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_experience.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\DeliveryExperienceOption $delivery_experience delivery_experience
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\DeliveryExperienceOption $delivery_experience delivery_experience
      *
      * @return $this
      */

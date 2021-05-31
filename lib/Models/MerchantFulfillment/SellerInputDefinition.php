@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SellerInputDefinition Class Doc Comment.
@@ -48,11 +48,11 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'is_required' => 'bool',
 'data_type' => 'string',
-'constraints' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Constraints',
+'constraints' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Constraints',
 'input_display_text' => 'string',
-'input_target' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\InputTargetType',
-'stored_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalSellerInput',
-'restricted_set_values' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\RestrictedSetValues',    ];
+'input_target' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\InputTargetType',
+'stored_value' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalSellerInput',
+'restricted_set_values' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\RestrictedSetValues',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -286,7 +286,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets constraints.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Constraints
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Constraints
      */
     public function getConstraints()
     {
@@ -296,7 +296,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets constraints.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Constraints $constraints constraints
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Constraints $constraints constraints
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets input_target.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\InputTargetType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\InputTargetType
      */
     public function getInputTarget()
     {
@@ -344,7 +344,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets input_target.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\InputTargetType $input_target input_target
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\InputTargetType $input_target input_target
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets stored_value.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalSellerInput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalSellerInput
      */
     public function getStoredValue()
     {
@@ -368,7 +368,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets stored_value.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalSellerInput $stored_value stored_value
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalSellerInput $stored_value stored_value
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets restricted_set_values.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\RestrictedSetValues
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\RestrictedSetValues
      */
     public function getRestrictedSetValues()
     {
@@ -392,7 +392,7 @@ class SellerInputDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets restricted_set_values.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\RestrictedSetValues $restricted_set_values restricted_set_values
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\RestrictedSetValues $restricted_set_values restricted_set_values
      *
      * @return $this
      */

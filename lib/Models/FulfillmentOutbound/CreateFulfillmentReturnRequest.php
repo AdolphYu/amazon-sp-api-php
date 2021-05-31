@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CreateFulfillmentReturnRequest Class Doc Comment.
@@ -46,7 +46,7 @@ class CreateFulfillmentReturnRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'items' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\CreateReturnItemList',    ];
+        'items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\CreateReturnItemList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -190,7 +190,7 @@ class CreateFulfillmentReturnRequest implements ModelInterface, ArrayAccess
     /**
      * Gets items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\CreateReturnItemList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\CreateReturnItemList
      */
     public function getItems()
     {
@@ -200,7 +200,7 @@ class CreateFulfillmentReturnRequest implements ModelInterface, ArrayAccess
     /**
      * Sets items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\CreateReturnItemList $items items
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\CreateReturnItemList $items items
      *
      * @return $this
      */

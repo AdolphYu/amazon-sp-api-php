@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CompetitivePriceType Class Doc Comment.
@@ -44,7 +44,7 @@ class CompetitivePriceType implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'competitive_price_id' => 'string',
-'price' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\PriceType',
+'price' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\PriceType',
 'condition' => 'string',
 'subcondition' => 'string',
 'belongs_to_requester' => 'bool',    ];
@@ -238,7 +238,7 @@ class CompetitivePriceType implements ModelInterface, ArrayAccess
     /**
      * Gets price.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\PriceType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\PriceType
      */
     public function getPrice()
     {
@@ -248,7 +248,7 @@ class CompetitivePriceType implements ModelInterface, ArrayAccess
     /**
      * Sets price.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\PriceType $price price
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\PriceType $price price
      *
      * @return $this
      */

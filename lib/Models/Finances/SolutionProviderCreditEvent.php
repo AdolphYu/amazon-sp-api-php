@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SolutionProviderCreditEvent Class Doc Comment.
@@ -54,8 +54,8 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
 'seller_store_name' => 'string',
 'provider_id' => 'string',
 'provider_store_name' => 'string',
-'transaction_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'transaction_creation_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',    ];
+'transaction_amount' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency',
+'transaction_creation_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\\DateTime',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -432,7 +432,7 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
     /**
      * Gets transaction_amount.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency
      */
     public function getTransactionAmount()
     {
@@ -442,7 +442,7 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
     /**
      * Sets transaction_amount.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency $transaction_amount transaction_amount
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency $transaction_amount transaction_amount
      *
      * @return $this
      */
@@ -456,7 +456,7 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
     /**
      * Gets transaction_creation_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime
      */
     public function getTransactionCreationDate()
     {
@@ -466,7 +466,7 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
     /**
      * Sets transaction_creation_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $transaction_creation_date transaction_creation_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime $transaction_creation_date transaction_creation_date
      *
      * @return $this
      */

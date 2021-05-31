@@ -1,10 +1,10 @@
 <?php
 
-namespace ClouSale\AmazonSellingPartnerAPI\Helpers;
+namespace AdolphYu\AmazonSellingPartnerAPI\Helpers;
 
-use ClouSale\AmazonSellingPartnerAPI\ApiException;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
-use ClouSale\AmazonSellingPartnerAPI\Signature;
+use AdolphYu\AmazonSellingPartnerAPI\ApiException;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Signature;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Query;

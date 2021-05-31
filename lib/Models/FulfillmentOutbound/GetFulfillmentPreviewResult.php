@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetFulfillmentPreviewResult Class Doc Comment.
@@ -46,7 +46,7 @@ class GetFulfillmentPreviewResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'fulfillment_previews' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewList',    ];
+        'fulfillment_previews' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -186,7 +186,7 @@ class GetFulfillmentPreviewResult implements ModelInterface, ArrayAccess
     /**
      * Gets fulfillment_previews.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewList
      */
     public function getFulfillmentPreviews()
     {
@@ -196,7 +196,7 @@ class GetFulfillmentPreviewResult implements ModelInterface, ArrayAccess
     /**
      * Sets fulfillment_previews.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewList $fulfillment_previews fulfillment_previews
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewList $fulfillment_previews fulfillment_previews
      *
      * @return $this
      */

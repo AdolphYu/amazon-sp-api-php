@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ItemIdentifier Class Doc Comment.
@@ -49,7 +49,7 @@ class ItemIdentifier implements ModelInterface, ArrayAccess
         'marketplace_id' => 'string',
 'asin' => 'string',
 'seller_sku' => 'string',
-'item_condition' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ConditionType',    ];
+'item_condition' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ConditionType',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -283,7 +283,7 @@ class ItemIdentifier implements ModelInterface, ArrayAccess
     /**
      * Gets item_condition.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ConditionType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ConditionType
      */
     public function getItemCondition()
     {
@@ -293,7 +293,7 @@ class ItemIdentifier implements ModelInterface, ArrayAccess
     /**
      * Sets item_condition.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\ConditionType $item_condition item_condition
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\ConditionType $item_condition item_condition
      *
      * @return $this
      */

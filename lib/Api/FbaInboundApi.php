@@ -13,25 +13,25 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Api;
+namespace AdolphYu\AmazonSellingPartnerAPI\Api;
 
-use ClouSale\AmazonSellingPartnerAPI\Configuration;
-use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
-use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetLabelsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPrepInstructionsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetTransportDetailsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\VoidTransportResponse;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Configuration;
+use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
+use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetLabelsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPrepInstructionsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetTransportDetailsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\VoidTransportResponse;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 
@@ -82,9 +82,9 @@ class FbaInboundApi
      * @param string    $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse
      */
     public function confirmPreorder($shipment_id, $need_by_date, $marketplace_id)
     {
@@ -101,9 +101,9 @@ class FbaInboundApi
      * @param string    $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function confirmPreorderWithHttpInfo($shipment_id, $need_by_date, $marketplace_id)
     {
@@ -146,7 +146,7 @@ class FbaInboundApi
      */
     public function confirmPreorderAsyncWithHttpInfo($shipment_id, $need_by_date, $marketplace_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmPreorderResponse';
         $request = $this->confirmPreorderRequest($shipment_id, $need_by_date, $marketplace_id);
 
         return $this->sendRequestAsync($request, ConfirmPreorderResponse::class);
@@ -212,9 +212,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse
      */
     public function confirmTransport($shipment_id)
     {
@@ -229,9 +229,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function confirmTransportWithHttpInfo($shipment_id)
     {
@@ -270,7 +270,7 @@ class FbaInboundApi
      */
     public function confirmTransportAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ConfirmTransportResponse';
         $request = $this->confirmTransportRequest($shipment_id);
 
         return $this->sendRequestAsync($request, ConfirmTransportResponse::class);
@@ -314,13 +314,13 @@ class FbaInboundApi
     /**
      * Operation createInboundShipment.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        body (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse
      */
     public function createInboundShipment($body, $shipment_id)
     {
@@ -332,17 +332,17 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInboundShipmentWithHttpInfo($body, $shipment_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse';
         $request = $this->createInboundShipmentRequest($body, $shipment_id);
 
         return $this->sendRequest($request, InboundShipmentResponse::class);
@@ -351,7 +351,7 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -371,7 +371,7 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -380,7 +380,7 @@ class FbaInboundApi
      */
     public function createInboundShipmentAsyncWithHttpInfo($body, $shipment_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse';
         $request = $this->createInboundShipmentRequest($body, $shipment_id);
 
         return $this->sendRequestAsync($request, InboundShipmentResponse::class);
@@ -389,7 +389,7 @@ class FbaInboundApi
     /**
      * Create request for operation 'createInboundShipment'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -429,12 +429,12 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentPlan.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanResponse
      */
     public function createInboundShipmentPlan($body)
     {
@@ -446,12 +446,12 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentPlanWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInboundShipmentPlanWithHttpInfo($body)
     {
@@ -463,7 +463,7 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentPlanAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -482,7 +482,7 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentPlanAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -498,7 +498,7 @@ class FbaInboundApi
     /**
      * Create request for operation 'createInboundShipmentPlan'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -527,9 +527,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\EstimateTransportResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\EstimateTransportResponse
      */
     public function estimateTransport($shipment_id)
     {
@@ -544,13 +544,13 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\EstimateTransportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\EstimateTransportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function estimateTransportWithHttpInfo($shipment_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\EstimateTransportResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\EstimateTransportResponse';
         $request = $this->estimateTransportRequest($shipment_id);
 
         return $this->sendRequest($request, EstimateTransportResponse::class);
@@ -632,9 +632,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse
      */
     public function getBillOfLading($shipment_id)
     {
@@ -649,9 +649,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBillOfLadingWithHttpInfo($shipment_id)
     {
@@ -690,7 +690,7 @@ class FbaInboundApi
      */
     public function getBillOfLadingAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetBillOfLadingResponse';
         $request = $this->getBillOfLadingRequest($shipment_id);
 
         return $this->sendRequestAsync($request, GetBillOfLadingResponse::class);
@@ -739,9 +739,9 @@ class FbaInboundApi
      * @param string[] $asin_list       A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon&#x27;s fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetInboundGuidanceResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetInboundGuidanceResponse
      */
     public function getInboundGuidance($marketplace_id, $seller_sku_list = null, $asin_list = null)
     {
@@ -758,9 +758,9 @@ class FbaInboundApi
      * @param string[] $asin_list       A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon&#x27;s fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetInboundGuidanceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetInboundGuidanceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInboundGuidanceWithHttpInfo($marketplace_id, $seller_sku_list = null, $asin_list = null)
     {
@@ -866,9 +866,9 @@ class FbaInboundApi
      * @param int      $number_of_pallets       The number of pallets in the shipment. This returns four identical labels for each pallet. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetLabelsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetLabelsResponse
      */
     public function getLabels($shipment_id, $page_type, $label_type, $number_of_packages = null, $package_labels_to_print = null, $number_of_pallets = null)
     {
@@ -888,9 +888,9 @@ class FbaInboundApi
      * @param int      $number_of_pallets       The number of pallets in the shipment. This returns four identical labels for each pallet. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetLabelsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetLabelsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getLabelsWithHttpInfo($shipment_id, $page_type, $label_type, $number_of_packages = null, $package_labels_to_print = null, $number_of_pallets = null)
     {
@@ -1023,9 +1023,9 @@ class FbaInboundApi
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse
      */
     public function getPreorderInfo($shipment_id, $marketplace_id)
     {
@@ -1041,9 +1041,9 @@ class FbaInboundApi
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPreorderInfoWithHttpInfo($shipment_id, $marketplace_id)
     {
@@ -1084,7 +1084,7 @@ class FbaInboundApi
      */
     public function getPreorderInfoAsyncWithHttpInfo($shipment_id, $marketplace_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPreorderInfoResponse';
         $request = $this->getPreorderInfoRequest($shipment_id, $marketplace_id);
 
         return $this->sendRequestAsync($request, GetPreorderInfoResponse::class);
@@ -1143,9 +1143,9 @@ class FbaInboundApi
      * @param string[] $asin_list            A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPrepInstructionsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPrepInstructionsResponse
      */
     public function getPrepInstructions($ship_to_country_code, $seller_sku_list = null, $asin_list = null)
     {
@@ -1162,9 +1162,9 @@ class FbaInboundApi
      * @param string[] $asin_list            A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPrepInstructionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetPrepInstructionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPrepInstructionsWithHttpInfo($ship_to_country_code, $seller_sku_list = null, $asin_list = null)
     {
@@ -1269,9 +1269,9 @@ class FbaInboundApi
      * @param string    $next_token          A string token returned in the response to your previous request. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse
      */
     public function getShipmentItems($query_type, $marketplace_id, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
@@ -1290,9 +1290,9 @@ class FbaInboundApi
      * @param string    $next_token          A string token returned in the response to your previous request. (optional)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentItemsWithHttpInfo($query_type, $marketplace_id, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
@@ -1406,9 +1406,9 @@ class FbaInboundApi
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace where the product would be stored. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse
      */
     public function getShipmentItemsByShipmentId($shipment_id, $marketplace_id)
     {
@@ -1424,9 +1424,9 @@ class FbaInboundApi
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace where the product would be stored. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentItemsByShipmentIdWithHttpInfo($shipment_id, $marketplace_id)
     {
@@ -1528,10 +1528,10 @@ class FbaInboundApi
      * @param \DateTime $last_updated_before  A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param string    $next_token           A string token returned in the response to your previous request. (optional)
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentsResponse
      */
     public function getShipments($query_type, $marketplace_id, $shipment_status_list = null, $shipment_id_list = null, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
@@ -1551,10 +1551,10 @@ class FbaInboundApi
      * @param \DateTime $last_updated_before  A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param string    $next_token           A string token returned in the response to your previous request. (optional)
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentsWithHttpInfo($query_type, $marketplace_id, $shipment_status_list = null, $shipment_id_list = null, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
@@ -1687,9 +1687,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetTransportDetailsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetTransportDetailsResponse
      */
     public function getTransportDetails($shipment_id)
     {
@@ -1704,9 +1704,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTransportDetailsWithHttpInfo($shipment_id)
     {
@@ -1788,13 +1788,13 @@ class FbaInboundApi
     /**
      * Operation putTransportDetails.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        body (required)
      * @param string                                                                                 $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsResponse
      */
     public function putTransportDetails($body, $shipment_id)
     {
@@ -1806,13 +1806,13 @@ class FbaInboundApi
     /**
      * Operation putTransportDetailsWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
      * @param string                                                                                 $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function putTransportDetailsWithHttpInfo($body, $shipment_id)
     {
@@ -1824,7 +1824,7 @@ class FbaInboundApi
     /**
      * Operation putTransportDetailsAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
      * @param string                                                                                 $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -1844,7 +1844,7 @@ class FbaInboundApi
     /**
      * Operation putTransportDetailsAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
      * @param string                                                                                 $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -1861,7 +1861,7 @@ class FbaInboundApi
     /**
      * Create request for operation 'putTransportDetails'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PutTransportDetailsRequest $body        (required)
      * @param string                                                                                 $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -1901,13 +1901,13 @@ class FbaInboundApi
     /**
      * Operation updateInboundShipment.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        body (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse
      */
     public function updateInboundShipment($body, $shipment_id)
     {
@@ -1919,13 +1919,13 @@ class FbaInboundApi
     /**
      * Operation updateInboundShipmentWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateInboundShipmentWithHttpInfo($body, $shipment_id)
     {
@@ -1937,7 +1937,7 @@ class FbaInboundApi
     /**
      * Operation updateInboundShipmentAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -1957,7 +1957,7 @@ class FbaInboundApi
     /**
      * Operation updateInboundShipmentAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -1974,7 +1974,7 @@ class FbaInboundApi
     /**
      * Create request for operation 'updateInboundShipment'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\InboundShipmentRequest $body        (required)
      * @param string                                                                             $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -2017,9 +2017,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\VoidTransportResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\VoidTransportResponse
      */
     public function voidTransport($shipment_id)
     {
@@ -2034,9 +2034,9 @@ class FbaInboundApi
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\VoidTransportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\VoidTransportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function voidTransportWithHttpInfo($shipment_id)
     {

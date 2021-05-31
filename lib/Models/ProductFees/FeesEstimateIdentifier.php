@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductFees;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * FeesEstimateIdentifier Class Doc Comment.
@@ -51,7 +51,7 @@ class FeesEstimateIdentifier implements ModelInterface, ArrayAccess
 'id_type' => 'string',
 'id_value' => 'string',
 'is_amazon_fulfilled' => 'bool',
-'price_to_estimate_fees' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\PriceToEstimateFees',
+'price_to_estimate_fees' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\PriceToEstimateFees',
 'seller_input_identifier' => 'string',    ];
 
     /**
@@ -342,7 +342,7 @@ class FeesEstimateIdentifier implements ModelInterface, ArrayAccess
     /**
      * Gets price_to_estimate_fees.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\PriceToEstimateFees
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\PriceToEstimateFees
      */
     public function getPriceToEstimateFees()
     {
@@ -352,7 +352,7 @@ class FeesEstimateIdentifier implements ModelInterface, ArrayAccess
     /**
      * Sets price_to_estimate_fees.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
      *
      * @return $this
      */

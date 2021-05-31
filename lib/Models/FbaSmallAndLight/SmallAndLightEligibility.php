@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SmallAndLightEligibility Class Doc Comment.
@@ -46,9 +46,9 @@ class SmallAndLightEligibility implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'marketplace_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId',
-'seller_sku' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SellerSKU',
-'status' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibilityStatus',    ];
+        'marketplace_id' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId',
+'seller_sku' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SellerSKU',
+'status' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibilityStatus',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -208,7 +208,7 @@ class SmallAndLightEligibility implements ModelInterface, ArrayAccess
     /**
      * Gets marketplace_id.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId
      */
     public function getMarketplaceId()
     {
@@ -218,7 +218,7 @@ class SmallAndLightEligibility implements ModelInterface, ArrayAccess
     /**
      * Sets marketplace_id.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId $marketplace_id marketplace_id
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId $marketplace_id marketplace_id
      *
      * @return $this
      */
@@ -232,7 +232,7 @@ class SmallAndLightEligibility implements ModelInterface, ArrayAccess
     /**
      * Gets seller_sku.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SellerSKU
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SellerSKU
      */
     public function getSellerSku()
     {
@@ -242,7 +242,7 @@ class SmallAndLightEligibility implements ModelInterface, ArrayAccess
     /**
      * Sets seller_sku.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SellerSKU $seller_sku seller_sku
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SellerSKU $seller_sku seller_sku
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class SmallAndLightEligibility implements ModelInterface, ArrayAccess
     /**
      * Gets status.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibilityStatus
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibilityStatus
      */
     public function getStatus()
     {
@@ -266,7 +266,7 @@ class SmallAndLightEligibility implements ModelInterface, ArrayAccess
     /**
      * Sets status.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibilityStatus $status status
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\SmallAndLightEligibilityStatus $status status
      *
      * @return $this
      */

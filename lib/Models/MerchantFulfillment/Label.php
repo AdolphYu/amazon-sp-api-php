@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Label Class Doc Comment.
@@ -46,11 +46,11 @@ class Label implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'custom_text_for_label' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CustomTextForLabel',
-'dimensions' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelDimensions',
-'file_contents' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\FileContents',
-'label_format' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelFormat',
-'standard_id_for_label' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\StandardIdForLabel',    ];
+        'custom_text_for_label' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CustomTextForLabel',
+'dimensions' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelDimensions',
+'file_contents' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\FileContents',
+'label_format' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelFormat',
+'standard_id_for_label' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\StandardIdForLabel',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -217,7 +217,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Gets custom_text_for_label.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CustomTextForLabel
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CustomTextForLabel
      */
     public function getCustomTextForLabel()
     {
@@ -227,7 +227,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Sets custom_text_for_label.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CustomTextForLabel $custom_text_for_label custom_text_for_label
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\CustomTextForLabel $custom_text_for_label custom_text_for_label
      *
      * @return $this
      */
@@ -241,7 +241,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelDimensions
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelDimensions
      */
     public function getDimensions()
     {
@@ -251,7 +251,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelDimensions $dimensions dimensions
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelDimensions $dimensions dimensions
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Gets file_contents.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\FileContents
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\FileContents
      */
     public function getFileContents()
     {
@@ -275,7 +275,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Sets file_contents.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\FileContents $file_contents file_contents
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\FileContents $file_contents file_contents
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Gets label_format.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelFormat
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelFormat
      */
     public function getLabelFormat()
     {
@@ -299,7 +299,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Sets label_format.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelFormat $label_format label_format
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelFormat $label_format label_format
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Gets standard_id_for_label.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\StandardIdForLabel
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\StandardIdForLabel
      */
     public function getStandardIdForLabel()
     {
@@ -323,7 +323,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Sets standard_id_for_label.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\StandardIdForLabel $standard_id_for_label standard_id_for_label
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\StandardIdForLabel $standard_id_for_label standard_id_for_label
      *
      * @return $this
      */

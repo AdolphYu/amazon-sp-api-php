@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * InvalidSKU Class Doc Comment.
@@ -44,7 +44,7 @@ class InvalidSKU implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
-'error_reason' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorReason',    ];
+'error_reason' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorReason',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -213,7 +213,7 @@ class InvalidSKU implements ModelInterface, ArrayAccess
     /**
      * Gets error_reason.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorReason
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorReason
      */
     public function getErrorReason()
     {
@@ -223,7 +223,7 @@ class InvalidSKU implements ModelInterface, ArrayAccess
     /**
      * Sets error_reason.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorReason $error_reason error_reason
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorReason $error_reason error_reason
      *
      * @return $this
      */

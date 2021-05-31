@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * FulfillmentPreview Class Doc Comment.
@@ -46,17 +46,17 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'shipping_speed_category' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory',
-'scheduled_delivery_info' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ScheduledDeliveryInfo',
+        'shipping_speed_category' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory',
+'scheduled_delivery_info' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ScheduledDeliveryInfo',
 'is_fulfillable' => 'bool',
 'is_cod_capable' => 'bool',
-'estimated_shipping_weight' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Weight',
-'estimated_fees' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeeList',
-'fulfillment_preview_shipments' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewShipmentList',
-'unfulfillable_preview_items' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UnfulfillablePreviewItemList',
-'order_unfulfillable_reasons' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\StringList',
+'estimated_shipping_weight' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Weight',
+'estimated_fees' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeeList',
+'fulfillment_preview_shipments' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewShipmentList',
+'unfulfillable_preview_items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UnfulfillablePreviewItemList',
+'order_unfulfillable_reasons' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\StringList',
 'marketplace_id' => 'string',
-'feature_constraints' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]',    ];
+'feature_constraints' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -259,7 +259,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_speed_category.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory
      */
     public function getShippingSpeedCategory()
     {
@@ -269,7 +269,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_speed_category.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets scheduled_delivery_info.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ScheduledDeliveryInfo
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ScheduledDeliveryInfo
      */
     public function getScheduledDeliveryInfo()
     {
@@ -293,7 +293,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets scheduled_delivery_info.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ScheduledDeliveryInfo $scheduled_delivery_info scheduled_delivery_info
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ScheduledDeliveryInfo $scheduled_delivery_info scheduled_delivery_info
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets estimated_shipping_weight.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Weight
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Weight
      */
     public function getEstimatedShippingWeight()
     {
@@ -365,7 +365,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets estimated_shipping_weight.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Weight $estimated_shipping_weight estimated_shipping_weight
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Weight $estimated_shipping_weight estimated_shipping_weight
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets estimated_fees.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeeList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeeList
      */
     public function getEstimatedFees()
     {
@@ -389,7 +389,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets estimated_fees.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeeList $estimated_fees estimated_fees
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeeList $estimated_fees estimated_fees
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets fulfillment_preview_shipments.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewShipmentList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewShipmentList
      */
     public function getFulfillmentPreviewShipments()
     {
@@ -413,7 +413,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets fulfillment_preview_shipments.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewShipmentList $fulfillment_preview_shipments fulfillment_preview_shipments
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPreviewShipmentList $fulfillment_preview_shipments fulfillment_preview_shipments
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets unfulfillable_preview_items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UnfulfillablePreviewItemList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UnfulfillablePreviewItemList
      */
     public function getUnfulfillablePreviewItems()
     {
@@ -437,7 +437,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets unfulfillable_preview_items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UnfulfillablePreviewItemList $unfulfillable_preview_items unfulfillable_preview_items
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UnfulfillablePreviewItemList $unfulfillable_preview_items unfulfillable_preview_items
      *
      * @return $this
      */
@@ -451,7 +451,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets order_unfulfillable_reasons.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\StringList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\StringList
      */
     public function getOrderUnfulfillableReasons()
     {
@@ -461,7 +461,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets order_unfulfillable_reasons.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\StringList $order_unfulfillable_reasons order_unfulfillable_reasons
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\StringList $order_unfulfillable_reasons order_unfulfillable_reasons
      *
      * @return $this
      */
@@ -499,7 +499,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Gets feature_constraints.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]
      */
     public function getFeatureConstraints()
     {
@@ -509,7 +509,7 @@ class FulfillmentPreview implements ModelInterface, ArrayAccess
     /**
      * Sets feature_constraints.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
      *
      * @return $this
      */

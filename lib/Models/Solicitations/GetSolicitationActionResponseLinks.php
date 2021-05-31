@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Solicitations;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetSolicitationActionResponseLinks Class Doc Comment.
@@ -43,8 +43,8 @@ class GetSolicitationActionResponseLinks implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'self' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject',
-'schema' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject',    ];
+        'self' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject',
+'schema' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -196,7 +196,7 @@ class GetSolicitationActionResponseLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject
      */
     public function getSelf()
     {
@@ -206,7 +206,7 @@ class GetSolicitationActionResponseLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject $self self
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject $self self
      *
      * @return $this
      */
@@ -220,7 +220,7 @@ class GetSolicitationActionResponseLinks implements ModelInterface, ArrayAccess
     /**
      * Gets schema.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject
      */
     public function getSchema()
     {
@@ -230,7 +230,7 @@ class GetSolicitationActionResponseLinks implements ModelInterface, ArrayAccess
     /**
      * Sets schema.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject $schema schema
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\LinkObject $schema schema
      *
      * @return $this
      */

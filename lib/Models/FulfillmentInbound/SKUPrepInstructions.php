@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SKUPrepInstructions Class Doc Comment.
@@ -48,10 +48,10 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
 'asin' => 'string',
-'barcode_instruction' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction',
-'prep_guidance' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance',
-'prep_instruction_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList',
-'amazon_prep_fees_details_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\AmazonPrepFeesDetailsList',    ];
+'barcode_instruction' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction',
+'prep_guidance' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance',
+'prep_instruction_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList',
+'amazon_prep_fees_details_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\AmazonPrepFeesDetailsList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -264,7 +264,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets barcode_instruction.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction
      */
     public function getBarcodeInstruction()
     {
@@ -274,7 +274,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets barcode_instruction.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
      *
      * @return $this
      */
@@ -288,7 +288,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_guidance.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance
      */
     public function getPrepGuidance()
     {
@@ -298,7 +298,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_guidance.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
      *
      * @return $this
      */
@@ -312,7 +312,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_instruction_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList
      */
     public function getPrepInstructionList()
     {
@@ -322,7 +322,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_instruction_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList $prep_instruction_list prep_instruction_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepInstructionList $prep_instruction_list prep_instruction_list
      *
      * @return $this
      */
@@ -336,7 +336,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets amazon_prep_fees_details_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\AmazonPrepFeesDetailsList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\AmazonPrepFeesDetailsList
      */
     public function getAmazonPrepFeesDetailsList()
     {
@@ -346,7 +346,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets amazon_prep_fees_details_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\AmazonPrepFeesDetailsList $amazon_prep_fees_details_list amazon_prep_fees_details_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\AmazonPrepFeesDetailsList $amazon_prep_fees_details_list amazon_prep_fees_details_list
      *
      * @return $this
      */

@@ -1,6 +1,6 @@
 <?php
 
-namespace ClouSale\AmazonSellingPartnerAPI;
+namespace AdolphYu\AmazonSellingPartnerAPI;
 
 use Exception;
 use Throwable;

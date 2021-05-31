@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Services;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Services;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ServiceJob Class Doc Comment.
@@ -47,18 +47,18 @@ class ServiceJob implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'create_time' => '\DateTime',
-'service_job_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceJobId',
+'service_job_id' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceJobId',
 'service_job_status' => 'string',
-'scope_of_work' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\ScopeOfWork',
-'seller' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\Seller',
-'service_job_provider' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceJobProvider',
-'preferred_appointment_times' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTime[]',
-'appointments' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\Appointment[]',
-'service_order_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\OrderId',
+'scope_of_work' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\ScopeOfWork',
+'seller' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\Seller',
+'service_job_provider' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceJobProvider',
+'preferred_appointment_times' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTime[]',
+'appointments' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\Appointment[]',
+'service_order_id' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\OrderId',
 'marketplace_id' => 'string',
-'buyer' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\Buyer',
-'associated_items' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\AssociatedItem[]',
-'service_location' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceLocation',    ];
+'buyer' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\Buyer',
+'associated_items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\AssociatedItem[]',
+'service_location' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceLocation',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -315,7 +315,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets service_job_id.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceJobId
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceJobId
      */
     public function getServiceJobId()
     {
@@ -325,7 +325,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets service_job_id.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceJobId $service_job_id service_job_id
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceJobId $service_job_id service_job_id
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets scope_of_work.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\ScopeOfWork
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ScopeOfWork
      */
     public function getScopeOfWork()
     {
@@ -377,7 +377,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets scope_of_work.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\ScopeOfWork $scope_of_work scope_of_work
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ScopeOfWork $scope_of_work scope_of_work
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets seller.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\Seller
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Seller
      */
     public function getSeller()
     {
@@ -401,7 +401,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets seller.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\Seller $seller seller
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Seller $seller seller
      *
      * @return $this
      */
@@ -415,7 +415,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets service_job_provider.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceJobProvider
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceJobProvider
      */
     public function getServiceJobProvider()
     {
@@ -425,7 +425,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets service_job_provider.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceJobProvider $service_job_provider service_job_provider
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceJobProvider $service_job_provider service_job_provider
      *
      * @return $this
      */
@@ -439,7 +439,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets preferred_appointment_times.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTime[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTime[]
      */
     public function getPreferredAppointmentTimes()
     {
@@ -449,7 +449,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets preferred_appointment_times.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTime[] $preferred_appointment_times A list of appointment windows preferred by the buyer. Included only if the buyer selected appointment windows when creating the order.
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTime[] $preferred_appointment_times A list of appointment windows preferred by the buyer. Included only if the buyer selected appointment windows when creating the order.
      *
      * @return $this
      */
@@ -463,7 +463,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets appointments.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\Appointment[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Appointment[]
      */
     public function getAppointments()
     {
@@ -473,7 +473,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets appointments.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\Appointment[] $appointments a list of appointments
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Appointment[] $appointments a list of appointments
      *
      * @return $this
      */
@@ -487,7 +487,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets service_order_id.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\OrderId
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\OrderId
      */
     public function getServiceOrderId()
     {
@@ -497,7 +497,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets service_order_id.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\OrderId $service_order_id service_order_id
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\OrderId $service_order_id service_order_id
      *
      * @return $this
      */
@@ -535,7 +535,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets buyer.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\Buyer
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Buyer
      */
     public function getBuyer()
     {
@@ -545,7 +545,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets buyer.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\Buyer $buyer buyer
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Buyer $buyer buyer
      *
      * @return $this
      */
@@ -559,7 +559,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets associated_items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\AssociatedItem[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AssociatedItem[]
      */
     public function getAssociatedItems()
     {
@@ -569,7 +569,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets associated_items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\AssociatedItem[] $associated_items a list of items associated with the service job
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AssociatedItem[] $associated_items a list of items associated with the service job
      *
      * @return $this
      */
@@ -583,7 +583,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Gets service_location.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceLocation
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceLocation
      */
     public function getServiceLocation()
     {
@@ -593,7 +593,7 @@ self::SERVICE_JOB_STATUS_PAYMENT_DECLINED,        ];
     /**
      * Sets service_location.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\ServiceLocation $service_location service_location
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ServiceLocation $service_location service_location
      *
      * @return $this
      */

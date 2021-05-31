@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Orders;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Orders;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderItemsList Class Doc Comment.
@@ -46,7 +46,7 @@ class OrderItemsList implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'order_items' => '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderItemList',
+        'order_items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderItemList',
 'next_token' => 'string',
 'amazon_order_id' => 'string',    ];
 
@@ -205,7 +205,7 @@ class OrderItemsList implements ModelInterface, ArrayAccess
     /**
      * Gets order_items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderItemList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderItemList
      */
     public function getOrderItems()
     {
@@ -215,7 +215,7 @@ class OrderItemsList implements ModelInterface, ArrayAccess
     /**
      * Sets order_items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Orders\OrderItemList $order_items order_items
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\OrderItemList $order_items order_items
      *
      * @return $this
      */

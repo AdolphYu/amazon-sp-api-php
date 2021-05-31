@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Authorization;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Authorization;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetAuthorizationCodeResponse Class Doc Comment.
@@ -46,8 +46,8 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\Authorization\AuthorizationCode',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\Authorization\ErrorList',    ];
+        'payload' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Authorization\AuthorizationCode',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Authorization\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Authorization\AuthorizationCode
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Authorization\AuthorizationCode
      */
     public function getPayload()
     {
@@ -202,7 +202,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Authorization\AuthorizationCode $payload payload
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Authorization\AuthorizationCode $payload payload
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Authorization\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Authorization\ErrorList
      */
     public function getErrors()
     {
@@ -226,7 +226,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Authorization\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Authorization\ErrorList $errors errors
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * NonPartneredSmallParcelDataOutput Class Doc Comment.
@@ -46,7 +46,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'package_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelPackageOutputList',    ];
+        'package_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelPackageOutputList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -190,7 +190,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets package_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelPackageOutputList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelPackageOutputList
      */
     public function getPackageList()
     {
@@ -200,7 +200,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets package_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelPackageOutputList $package_list package_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\NonPartneredSmallParcelPackageOutputList $package_list package_list
      *
      * @return $this
      */

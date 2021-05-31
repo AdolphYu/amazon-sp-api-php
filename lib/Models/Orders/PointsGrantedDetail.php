@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Orders;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Orders;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * PointsGrantedDetail Class Doc Comment.
@@ -47,7 +47,7 @@ class PointsGrantedDetail implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'points_number' => 'int',
-'points_monetary_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\Money',    ];
+'points_monetary_value' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\Money',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -216,7 +216,7 @@ class PointsGrantedDetail implements ModelInterface, ArrayAccess
     /**
      * Gets points_monetary_value.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Orders\Money
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\Money
      */
     public function getPointsMonetaryValue()
     {
@@ -226,7 +226,7 @@ class PointsGrantedDetail implements ModelInterface, ArrayAccess
     /**
      * Sets points_monetary_value.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Orders\Money $points_monetary_value points_monetary_value
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Orders\Money $points_monetary_value points_monetary_value
      *
      * @return $this
      */

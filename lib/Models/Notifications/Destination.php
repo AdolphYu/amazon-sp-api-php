@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Notifications;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Notifications;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Destination Class Doc Comment.
@@ -48,7 +48,7 @@ class Destination implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
 'destination_id' => 'string',
-'resource' => '\ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DestinationResource',    ];
+'resource' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DestinationResource',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -256,7 +256,7 @@ class Destination implements ModelInterface, ArrayAccess
     /**
      * Gets resource.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DestinationResource
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DestinationResource
      */
     public function getResource()
     {
@@ -266,7 +266,7 @@ class Destination implements ModelInterface, ArrayAccess
     /**
      * Sets resource.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DestinationResource $resource resource
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DestinationResource $resource resource
      *
      * @return $this
      */

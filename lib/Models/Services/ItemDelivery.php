@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Services;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Services;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ItemDelivery Class Doc Comment.
@@ -47,7 +47,7 @@ class ItemDelivery implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'estimated_delivery_date' => '\DateTime',
-'item_delivery_promise' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\ItemDeliveryPromise',    ];
+'item_delivery_promise' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\ItemDeliveryPromise',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -216,7 +216,7 @@ class ItemDelivery implements ModelInterface, ArrayAccess
     /**
      * Gets item_delivery_promise.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\ItemDeliveryPromise
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ItemDeliveryPromise
      */
     public function getItemDeliveryPromise()
     {
@@ -226,7 +226,7 @@ class ItemDelivery implements ModelInterface, ArrayAccess
     /**
      * Sets item_delivery_promise.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\ItemDeliveryPromise $item_delivery_promise item_delivery_promise
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\ItemDeliveryPromise $item_delivery_promise item_delivery_promise
      *
      * @return $this
      */

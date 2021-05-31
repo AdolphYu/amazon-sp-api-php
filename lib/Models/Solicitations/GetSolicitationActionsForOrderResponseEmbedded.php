@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Solicitations;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetSolicitationActionsForOrderResponseEmbedded Class Doc Comment.
@@ -43,7 +43,7 @@ class GetSolicitationActionsForOrderResponseEmbedded implements ModelInterface, 
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'actions' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponse[]',    ];
+        'actions' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponse[]',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -187,7 +187,7 @@ class GetSolicitationActionsForOrderResponseEmbedded implements ModelInterface, 
     /**
      * Gets actions.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponse[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponse[]
      */
     public function getActions()
     {
@@ -197,7 +197,7 @@ class GetSolicitationActionsForOrderResponseEmbedded implements ModelInterface, 
     /**
      * Sets actions.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponse[] $actions actions
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponse[] $actions actions
      *
      * @return $this
      */

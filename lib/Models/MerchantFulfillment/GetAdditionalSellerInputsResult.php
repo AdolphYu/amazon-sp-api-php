@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetAdditionalSellerInputsResult Class Doc Comment.
@@ -46,8 +46,8 @@ class GetAdditionalSellerInputsResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'shipment_level_fields' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalInputsList',
-'item_level_fields_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ItemLevelFieldsList',    ];
+        'shipment_level_fields' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalInputsList',
+'item_level_fields_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ItemLevelFieldsList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class GetAdditionalSellerInputsResult implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_level_fields.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalInputsList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalInputsList
      */
     public function getShipmentLevelFields()
     {
@@ -202,7 +202,7 @@ class GetAdditionalSellerInputsResult implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_level_fields.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalInputsList $shipment_level_fields shipment_level_fields
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AdditionalInputsList $shipment_level_fields shipment_level_fields
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class GetAdditionalSellerInputsResult implements ModelInterface, ArrayAccess
     /**
      * Gets item_level_fields_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ItemLevelFieldsList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ItemLevelFieldsList
      */
     public function getItemLevelFieldsList()
     {
@@ -226,7 +226,7 @@ class GetAdditionalSellerInputsResult implements ModelInterface, ArrayAccess
     /**
      * Sets item_level_fields_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ItemLevelFieldsList $item_level_fields_list item_level_fields_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ItemLevelFieldsList $item_level_fields_list item_level_fields_list
      *
      * @return $this
      */

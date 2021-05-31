@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Notifications;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Notifications;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CreateDestinationRequest Class Doc Comment.
@@ -46,7 +46,7 @@ class CreateDestinationRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'resource_specification' => '\ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DestinationResourceSpecification',
+        'resource_specification' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DestinationResourceSpecification',
 'name' => 'string',    ];
 
     /**
@@ -199,7 +199,7 @@ class CreateDestinationRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resource_specification.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DestinationResourceSpecification
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DestinationResourceSpecification
      */
     public function getResourceSpecification()
     {
@@ -209,7 +209,7 @@ class CreateDestinationRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resource_specification.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\DestinationResourceSpecification $resource_specification resource_specification
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\DestinationResourceSpecification $resource_specification resource_specification
      *
      * @return $this
      */

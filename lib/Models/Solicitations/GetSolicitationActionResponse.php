@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Solicitations;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetSolicitationActionResponse Class Doc Comment.
@@ -46,10 +46,10 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        '_links' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseLinks',
-'_embedded' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseEmbedded',
-'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\SolicitationsAction',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\ErrorList',    ];
+        '_links' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseLinks',
+'_embedded' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseEmbedded',
+'payload' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\SolicitationsAction',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -204,7 +204,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Gets _links.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseLinks
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseLinks
      */
     public function getLinks()
     {
@@ -214,7 +214,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Sets _links.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseLinks $_links _links
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseLinks $_links _links
      *
      * @return $this
      */
@@ -228,7 +228,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseEmbedded
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseEmbedded
      */
     public function getEmbedded()
     {
@@ -238,7 +238,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseEmbedded $_embedded _embedded
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\GetSolicitationActionResponseEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -252,7 +252,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\SolicitationsAction
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\SolicitationsAction
      */
     public function getPayload()
     {
@@ -262,7 +262,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\SolicitationsAction $payload payload
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\SolicitationsAction $payload payload
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\ErrorList
      */
     public function getErrors()
     {
@@ -286,7 +286,7 @@ class GetSolicitationActionResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Solicitations\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Solicitations\ErrorList $errors errors
      *
      * @return $this
      */

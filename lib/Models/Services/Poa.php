@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Services;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Services;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Poa Class Doc Comment.
@@ -46,8 +46,8 @@ class Poa implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'appointment_time' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTime',
-'technicians' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\Technician[]',
+        'appointment_time' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTime',
+'technicians' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\Technician[]',
 'uploading_technician' => 'string',
 'upload_time' => '\DateTime',
 'poa_type' => 'string',    ];
@@ -237,7 +237,7 @@ self::POA_TYPE_POA_RECEIPT,        ];
     /**
      * Gets appointment_time.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTime
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTime
      */
     public function getAppointmentTime()
     {
@@ -247,7 +247,7 @@ self::POA_TYPE_POA_RECEIPT,        ];
     /**
      * Sets appointment_time.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTime $appointment_time appointment_time
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTime $appointment_time appointment_time
      *
      * @return $this
      */
@@ -261,7 +261,7 @@ self::POA_TYPE_POA_RECEIPT,        ];
     /**
      * Gets technicians.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\Technician[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Technician[]
      */
     public function getTechnicians()
     {
@@ -271,7 +271,7 @@ self::POA_TYPE_POA_RECEIPT,        ];
     /**
      * Sets technicians.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\Technician[] $technicians a list of technicians
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\Technician[] $technicians a list of technicians
      *
      * @return $this
      */

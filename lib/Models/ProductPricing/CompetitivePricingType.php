@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * CompetitivePricingType Class Doc Comment.
@@ -46,9 +46,9 @@ class CompetitivePricingType implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'competitive_prices' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\CompetitivePriceList',
-'number_of_offer_listings' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOfferListingsList',
-'trade_in_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',    ];
+        'competitive_prices' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\CompetitivePriceList',
+'number_of_offer_listings' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOfferListingsList',
+'trade_in_value' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -205,7 +205,7 @@ class CompetitivePricingType implements ModelInterface, ArrayAccess
     /**
      * Gets competitive_prices.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\CompetitivePriceList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\CompetitivePriceList
      */
     public function getCompetitivePrices()
     {
@@ -215,7 +215,7 @@ class CompetitivePricingType implements ModelInterface, ArrayAccess
     /**
      * Sets competitive_prices.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\CompetitivePriceList $competitive_prices competitive_prices
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\CompetitivePriceList $competitive_prices competitive_prices
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class CompetitivePricingType implements ModelInterface, ArrayAccess
     /**
      * Gets number_of_offer_listings.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOfferListingsList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOfferListingsList
      */
     public function getNumberOfOfferListings()
     {
@@ -239,7 +239,7 @@ class CompetitivePricingType implements ModelInterface, ArrayAccess
     /**
      * Sets number_of_offer_listings.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOfferListingsList $number_of_offer_listings number_of_offer_listings
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\NumberOfOfferListingsList $number_of_offer_listings number_of_offer_listings
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class CompetitivePricingType implements ModelInterface, ArrayAccess
     /**
      * Gets trade_in_value.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType
      */
     public function getTradeInValue()
     {
@@ -263,7 +263,7 @@ class CompetitivePricingType implements ModelInterface, ArrayAccess
     /**
      * Sets trade_in_value.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $trade_in_value trade_in_value
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductPricing\MoneyType $trade_in_value trade_in_value
      *
      * @return $this
      */

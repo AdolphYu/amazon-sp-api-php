@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * VoidTransportResponse Class Doc Comment.
@@ -46,8 +46,8 @@ class VoidTransportResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CommonTransportResult',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorList',    ];
+        'payload' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CommonTransportResult',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class VoidTransportResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CommonTransportResult
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CommonTransportResult
      */
     public function getPayload()
     {
@@ -202,7 +202,7 @@ class VoidTransportResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CommonTransportResult $payload payload
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\CommonTransportResult $payload payload
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class VoidTransportResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorList
      */
     public function getErrors()
     {
@@ -226,7 +226,7 @@ class VoidTransportResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ErrorList $errors errors
      *
      * @return $this
      */

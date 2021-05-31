@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\ProductFees;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetMyFeesEstimateResult Class Doc Comment.
@@ -46,7 +46,7 @@ class GetMyFeesEstimateResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'fees_estimate_result' => '\ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateResult',    ];
+        'fees_estimate_result' => '\AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateResult',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -186,7 +186,7 @@ class GetMyFeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Gets fees_estimate_result.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateResult
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateResult
      */
     public function getFeesEstimateResult()
     {
@@ -196,7 +196,7 @@ class GetMyFeesEstimateResult implements ModelInterface, ArrayAccess
     /**
      * Sets fees_estimate_result.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateResult $fees_estimate_result fees_estimate_result
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\ProductFees\FeesEstimateResult $fees_estimate_result fees_estimate_result
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * PutTransportDetailsRequest Class Doc Comment.
@@ -47,8 +47,8 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'is_partnered' => 'bool',
-'shipment_type' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType',
-'transport_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportDetailInput',    ];
+'shipment_type' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType',
+'transport_details' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportDetailInput',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -232,7 +232,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_type.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType
      */
     public function getShipmentType()
     {
@@ -242,7 +242,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_type.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType $shipment_type shipment_type
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType $shipment_type shipment_type
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets transport_details.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportDetailInput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportDetailInput
      */
     public function getTransportDetails()
     {
@@ -266,7 +266,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets transport_details.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportDetailInput $transport_details transport_details
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportDetailInput $transport_details transport_details
      *
      * @return $this
      */

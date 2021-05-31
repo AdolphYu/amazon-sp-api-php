@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Services;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Services;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * AddAppointmentRequest Class Doc Comment.
@@ -46,7 +46,7 @@ class AddAppointmentRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'appointment_time' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput',    ];
+        'appointment_time' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -190,7 +190,7 @@ class AddAppointmentRequest implements ModelInterface, ArrayAccess
     /**
      * Gets appointment_time.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput
      */
     public function getAppointmentTime()
     {
@@ -200,7 +200,7 @@ class AddAppointmentRequest implements ModelInterface, ArrayAccess
     /**
      * Sets appointment_time.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput $appointment_time appointment_time
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput $appointment_time appointment_time
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * UpdateFulfillmentOrderRequest Class Doc Comment.
@@ -45,16 +45,16 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'marketplace_id' => 'string',
 'displayable_order_id' => 'string',
-'displayable_order_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
+'displayable_order_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp',
 'displayable_order_comment' => 'string',
-'shipping_speed_category' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory',
-'destination_address' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address',
-'fulfillment_action' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentAction',
-'fulfillment_policy' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPolicy',
+'shipping_speed_category' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory',
+'destination_address' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address',
+'fulfillment_action' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentAction',
+'fulfillment_policy' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPolicy',
 'ship_from_country_code' => 'string',
-'notification_emails' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\NotificationEmailList',
-'feature_constraints' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]',
-'items' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UpdateFulfillmentOrderItemList',    ];
+'notification_emails' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\NotificationEmailList',
+'feature_constraints' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]',
+'items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UpdateFulfillmentOrderItemList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -297,7 +297,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets displayable_order_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp
      */
     public function getDisplayableOrderDate()
     {
@@ -307,7 +307,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets displayable_order_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $displayable_order_date displayable_order_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Timestamp $displayable_order_date displayable_order_date
      *
      * @return $this
      */
@@ -345,7 +345,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_speed_category.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory
      */
     public function getShippingSpeedCategory()
     {
@@ -355,7 +355,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_speed_category.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      *
      * @return $this
      */
@@ -369,7 +369,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets destination_address.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address
      */
     public function getDestinationAddress()
     {
@@ -379,7 +379,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets destination_address.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address $destination_address destination_address
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address $destination_address destination_address
      *
      * @return $this
      */
@@ -393,7 +393,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets fulfillment_action.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentAction
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentAction
      */
     public function getFulfillmentAction()
     {
@@ -403,7 +403,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets fulfillment_action.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentAction $fulfillment_action fulfillment_action
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentAction $fulfillment_action fulfillment_action
      *
      * @return $this
      */
@@ -417,7 +417,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets fulfillment_policy.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPolicy
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPolicy
      */
     public function getFulfillmentPolicy()
     {
@@ -427,7 +427,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets fulfillment_policy.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPolicy $fulfillment_policy fulfillment_policy
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FulfillmentPolicy $fulfillment_policy fulfillment_policy
      *
      * @return $this
      */
@@ -465,7 +465,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets notification_emails.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\NotificationEmailList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\NotificationEmailList
      */
     public function getNotificationEmails()
     {
@@ -475,7 +475,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets notification_emails.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\NotificationEmailList $notification_emails notification_emails
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\NotificationEmailList $notification_emails notification_emails
      *
      * @return $this
      */
@@ -489,7 +489,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets feature_constraints.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[]
      */
     public function getFeatureConstraints()
     {
@@ -499,7 +499,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets feature_constraints.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
      *
      * @return $this
      */
@@ -513,7 +513,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Gets items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UpdateFulfillmentOrderItemList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UpdateFulfillmentOrderItemList
      */
     public function getItems()
     {
@@ -523,7 +523,7 @@ class UpdateFulfillmentOrderRequest implements ModelInterface, ArrayAccess
     /**
      * Sets items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UpdateFulfillmentOrderItemList $items items
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\UpdateFulfillmentOrderItemList $items items
      *
      * @return $this
      */

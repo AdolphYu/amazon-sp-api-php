@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * InboundShipmentPlanRequestItem Class Doc Comment.
@@ -48,10 +48,10 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
 'asin' => 'string',
-'condition' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Condition',
-'quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity',
-'quantity_in_case' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity',
-'prep_details_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepDetailsList',    ];
+'condition' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Condition',
+'quantity' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity',
+'quantity_in_case' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity',
+'prep_details_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepDetailsList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -277,7 +277,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets condition.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Condition
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Condition
      */
     public function getCondition()
     {
@@ -287,7 +287,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets condition.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Condition $condition condition
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Condition $condition condition
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity
      */
     public function getQuantity()
     {
@@ -311,7 +311,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity $quantity quantity
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity $quantity quantity
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_in_case.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity
      */
     public function getQuantityInCase()
     {
@@ -335,7 +335,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_in_case.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity $quantity_in_case quantity_in_case
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Quantity $quantity_in_case quantity_in_case
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets prep_details_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepDetailsList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepDetailsList
      */
     public function getPrepDetailsList()
     {
@@ -359,7 +359,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets prep_details_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepDetailsList $prep_details_list prep_details_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\PrepDetailsList $prep_details_list prep_details_list
      *
      * @return $this
      */

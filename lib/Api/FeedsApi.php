@@ -13,18 +13,18 @@
  * OpenAPI spec version: 2020-09-04
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Api;
+namespace AdolphYu\AmazonSellingPartnerAPI\Api;
 
-use ClouSale\AmazonSellingPartnerAPI\Configuration;
-use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
-use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
-use ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedDocumentResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse;
-use ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Configuration;
+use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
+use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedDocumentResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 
@@ -73,9 +73,9 @@ class FeedsApi
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse
      */
     public function cancelFeed($feed_id)
     {
@@ -90,13 +90,13 @@ class FeedsApi
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelFeedWithHttpInfo($feed_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CancelFeedResponse';
         $request = $this->cancelFeedRequest($feed_id);
 
         return $this->sendRequest($request, CancelFeedResponse::class);
@@ -175,12 +175,12 @@ class FeedsApi
     /**
      * Operation createFeed.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse
      */
     public function createFeed($body)
     {
@@ -192,16 +192,16 @@ class FeedsApi
     /**
      * Operation createFeedWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createFeedWithHttpInfo($body)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedResponse';
         $request = $this->createFeedRequest($body);
 
         return $this->sendRequest($request, CreateFeedResponse::class);
@@ -210,7 +210,7 @@ class FeedsApi
     /**
      * Operation createFeedAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -229,7 +229,7 @@ class FeedsApi
     /**
      * Operation createFeedAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -245,7 +245,7 @@ class FeedsApi
     /**
      * Create request for operation 'createFeed'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -271,12 +271,12 @@ class FeedsApi
     /**
      * Operation createFeedDocument.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentResponse
      */
     public function createFeedDocument($body)
     {
@@ -288,12 +288,12 @@ class FeedsApi
     /**
      * Operation createFeedDocumentWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createFeedDocumentWithHttpInfo($body)
     {
@@ -305,7 +305,7 @@ class FeedsApi
     /**
      * Operation createFeedDocumentAsync.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -324,7 +324,7 @@ class FeedsApi
     /**
      * Operation createFeedDocumentAsyncWithHttpInfo.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -340,7 +340,7 @@ class FeedsApi
     /**
      * Create request for operation 'createFeedDocument'.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\CreateFeedDocumentSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      *
@@ -369,9 +369,9 @@ class FeedsApi
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse
      */
     public function getFeed($feed_id)
     {
@@ -386,13 +386,13 @@ class FeedsApi
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedWithHttpInfo($feed_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse';
         $request = $this->getFeedRequest($feed_id);
 
         return $this->sendRequest($request, GetFeedResponse::class);
@@ -428,7 +428,7 @@ class FeedsApi
      */
     public function getFeedAsyncWithHttpInfo($feed_id)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedResponse';
         $request = $this->getFeedRequest($feed_id);
 
         return $this->sendRequestAsync($request, GetFeedResponse::class);
@@ -475,9 +475,9 @@ class FeedsApi
      * @param string $feed_document_id The identifier of the feed document. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedDocumentResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedDocumentResponse
      */
     public function getFeedDocument($feed_document_id)
     {
@@ -492,9 +492,9 @@ class FeedsApi
      * @param string $feed_document_id The identifier of the feed document. (required)
      *
      * @throws \InvalidArgumentException
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedDocumentWithHttpInfo($feed_document_id)
     {
@@ -584,10 +584,10 @@ class FeedsApi
      * @param \DateTime $created_until       The latest feed creation date and time for feeds included in the response, in ISO 8601 format. The default is now. (optional)
      * @param string    $next_token          A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getFeeds operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse
      */
     public function getFeeds($feed_types = null, $marketplace_ids = null, $page_size = '10', $processing_statuses = null, $created_since = null, $created_until = null, $next_token = null)
     {
@@ -607,10 +607,10 @@ class FeedsApi
      * @param \DateTime $created_until       The latest feed creation date and time for feeds included in the response, in ISO 8601 format. The default is now. (optional)
      * @param string    $next_token          A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getFeeds operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
      *
-     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
+     * @throws \AdolphYu\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      *
-     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedsWithHttpInfo($feed_types = null, $marketplace_ids = null, $page_size = '10', $processing_statuses = null, $created_since = null, $created_until = null, $next_token = null)
     {
@@ -661,7 +661,7 @@ class FeedsApi
      */
     public function getFeedsAsyncWithHttpInfo($feed_types = null, $marketplace_ids = null, $page_size = '10', $processing_statuses = null, $created_since = null, $created_until = null, $next_token = null)
     {
-        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse';
+        $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Feeds\GetFeedsResponse';
         $request = $this->getFeedsRequest($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token);
 
         return $this->sendRequestAsync($request, GetFeedsResponse::class);

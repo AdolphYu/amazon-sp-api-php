@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Shipping;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Shipping;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Label Class Doc Comment.
@@ -46,8 +46,8 @@ class Label implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'label_stream' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\LabelStream',
-'label_specification' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\LabelSpecification',    ];
+        'label_stream' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\LabelStream',
+'label_specification' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\LabelSpecification',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Gets label_stream.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\LabelStream
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\LabelStream
      */
     public function getLabelStream()
     {
@@ -202,7 +202,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Sets label_stream.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\LabelStream $label_stream label_stream
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\LabelStream $label_stream label_stream
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Gets label_specification.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\LabelSpecification
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\LabelSpecification
      */
     public function getLabelSpecification()
     {
@@ -226,7 +226,7 @@ class Label implements ModelInterface, ArrayAccess
     /**
      * Sets label_specification.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\LabelSpecification $label_specification label_specification
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\LabelSpecification $label_specification label_specification
      *
      * @return $this
      */

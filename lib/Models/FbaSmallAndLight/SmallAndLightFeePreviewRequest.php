@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SmallAndLightFeePreviewRequest Class Doc Comment.
@@ -46,8 +46,8 @@ class SmallAndLightFeePreviewRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'marketplace_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId',
-'items' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\Item[]',    ];
+        'marketplace_id' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId',
+'items' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\Item[]',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -199,7 +199,7 @@ class SmallAndLightFeePreviewRequest implements ModelInterface, ArrayAccess
     /**
      * Gets marketplace_id.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId
      */
     public function getMarketplaceId()
     {
@@ -209,7 +209,7 @@ class SmallAndLightFeePreviewRequest implements ModelInterface, ArrayAccess
     /**
      * Sets marketplace_id.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId $marketplace_id marketplace_id
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\MarketplaceId $marketplace_id marketplace_id
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class SmallAndLightFeePreviewRequest implements ModelInterface, ArrayAccess
     /**
      * Gets items.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\Item[]
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\Item[]
      */
     public function getItems()
     {
@@ -233,7 +233,7 @@ class SmallAndLightFeePreviewRequest implements ModelInterface, ArrayAccess
     /**
      * Sets items.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\Item[] $items a list of items for which to retrieve fee estimates (limit: 25)
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaSmallAndLight\Item[] $items a list of items for which to retrieve fee estimates (limit: 25)
      *
      * @return $this
      */

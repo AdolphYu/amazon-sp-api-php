@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * PartneredSmallParcelPackageInput Class Doc Comment.
@@ -46,8 +46,8 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'dimensions' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Dimensions',
-'weight' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Weight',    ];
+        'dimensions' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Dimensions',
+'weight' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Weight',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -199,7 +199,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Dimensions
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Dimensions
      */
     public function getDimensions()
     {
@@ -209,7 +209,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Dimensions $dimensions dimensions
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Dimensions $dimensions dimensions
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Gets weight.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Weight
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Weight
      */
     public function getWeight()
     {
@@ -233,7 +233,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Sets weight.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Weight $weight weight
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\Weight $weight weight
      *
      * @return $this
      */

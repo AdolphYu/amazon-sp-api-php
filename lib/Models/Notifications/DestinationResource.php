@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Notifications;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Notifications;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * DestinationResource Class Doc Comment.
@@ -46,8 +46,8 @@ class DestinationResource implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'sqs' => '\ClouSale\AmazonSellingPartnerAPI\Models\Notifications\SqsResource',
-'event_bridge' => '\ClouSale\AmazonSellingPartnerAPI\Models\Notifications\EventBridgeResource',    ];
+        'sqs' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\SqsResource',
+'event_bridge' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\EventBridgeResource',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class DestinationResource implements ModelInterface, ArrayAccess
     /**
      * Gets sqs.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\SqsResource
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\SqsResource
      */
     public function getSqs()
     {
@@ -202,7 +202,7 @@ class DestinationResource implements ModelInterface, ArrayAccess
     /**
      * Sets sqs.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\SqsResource $sqs sqs
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\SqsResource $sqs sqs
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class DestinationResource implements ModelInterface, ArrayAccess
     /**
      * Gets event_bridge.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\EventBridgeResource
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\EventBridgeResource
      */
     public function getEventBridge()
     {
@@ -226,7 +226,7 @@ class DestinationResource implements ModelInterface, ArrayAccess
     /**
      * Sets event_bridge.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Notifications\EventBridgeResource $event_bridge event_bridge
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Notifications\EventBridgeResource $event_bridge event_bridge
      *
      * @return $this
      */

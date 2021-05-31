@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Dimensions Class Doc Comment.
@@ -46,10 +46,10 @@ class Dimensions implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'length' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType',
-'width' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType',
-'height' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType',
-'unit' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\UnitOfMeasurement',    ];
+        'length' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType',
+'width' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType',
+'height' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType',
+'unit' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\UnitOfMeasurement',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -217,7 +217,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets length.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType
      */
     public function getLength()
     {
@@ -227,7 +227,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets length.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType $length length
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType $length length
      *
      * @return $this
      */
@@ -241,7 +241,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets width.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType
      */
     public function getWidth()
     {
@@ -251,7 +251,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets width.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType $width width
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType $width width
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets height.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType
      */
     public function getHeight()
     {
@@ -275,7 +275,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets height.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType $height height
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\BigDecimalType $height height
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets unit.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\UnitOfMeasurement
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\UnitOfMeasurement
      */
     public function getUnit()
     {
@@ -299,7 +299,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets unit.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\UnitOfMeasurement $unit unit
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\UnitOfMeasurement $unit unit
      *
      * @return $this
      */

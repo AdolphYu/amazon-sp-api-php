@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * InventoryDetails Class Doc Comment.
@@ -50,9 +50,9 @@ class InventoryDetails implements ModelInterface, ArrayAccess
 'inbound_working_quantity' => 'int',
 'inbound_shipped_quantity' => 'int',
 'inbound_receiving_quantity' => 'int',
-'reserved_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\ReservedQuantity',
-'researching_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\ResearchingQuantity',
-'unfulfillable_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\UnfulfillableQuantity',    ];
+'reserved_quantity' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\ReservedQuantity',
+'researching_quantity' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\ResearchingQuantity',
+'unfulfillable_quantity' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\UnfulfillableQuantity',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -318,7 +318,7 @@ class InventoryDetails implements ModelInterface, ArrayAccess
     /**
      * Gets reserved_quantity.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\ReservedQuantity
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\ReservedQuantity
      */
     public function getReservedQuantity()
     {
@@ -328,7 +328,7 @@ class InventoryDetails implements ModelInterface, ArrayAccess
     /**
      * Sets reserved_quantity.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\ReservedQuantity $reserved_quantity reserved_quantity
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\ReservedQuantity $reserved_quantity reserved_quantity
      *
      * @return $this
      */
@@ -342,7 +342,7 @@ class InventoryDetails implements ModelInterface, ArrayAccess
     /**
      * Gets researching_quantity.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\ResearchingQuantity
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\ResearchingQuantity
      */
     public function getResearchingQuantity()
     {
@@ -352,7 +352,7 @@ class InventoryDetails implements ModelInterface, ArrayAccess
     /**
      * Sets researching_quantity.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\ResearchingQuantity $researching_quantity researching_quantity
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\ResearchingQuantity $researching_quantity researching_quantity
      *
      * @return $this
      */
@@ -366,7 +366,7 @@ class InventoryDetails implements ModelInterface, ArrayAccess
     /**
      * Gets unfulfillable_quantity.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\UnfulfillableQuantity
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\UnfulfillableQuantity
      */
     public function getUnfulfillableQuantity()
     {
@@ -376,7 +376,7 @@ class InventoryDetails implements ModelInterface, ArrayAccess
     /**
      * Sets unfulfillable_quantity.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FbaInventory\UnfulfillableQuantity $unfulfillable_quantity unfulfillable_quantity
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FbaInventory\UnfulfillableQuantity $unfulfillable_quantity unfulfillable_quantity
      *
      * @return $this
      */

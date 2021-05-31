@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Shipping;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Shipping;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetRatesResult Class Doc Comment.
@@ -46,7 +46,7 @@ class GetRatesResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'service_rates' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\ServiceRateList',    ];
+        'service_rates' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\ServiceRateList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -190,7 +190,7 @@ class GetRatesResult implements ModelInterface, ArrayAccess
     /**
      * Gets service_rates.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\ServiceRateList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\ServiceRateList
      */
     public function getServiceRates()
     {
@@ -200,7 +200,7 @@ class GetRatesResult implements ModelInterface, ArrayAccess
     /**
      * Sets service_rates.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\ServiceRateList $service_rates service_rates
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Shipping\ServiceRateList $service_rates service_rates
      *
      * @return $this
      */

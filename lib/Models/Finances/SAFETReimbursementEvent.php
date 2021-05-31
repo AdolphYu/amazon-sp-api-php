@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SAFETReimbursementEvent Class Doc Comment.
@@ -46,11 +46,11 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+        'posted_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
 'safet_claim_id' => 'string',
-'reimbursed_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
+'reimbursed_amount' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency',
 'reason_code' => 'string',
-'safet_reimbursement_item_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\SAFETReimbursementItemList',    ];
+'safet_reimbursement_item_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\SAFETReimbursementItemList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -210,7 +210,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime
      */
     public function getPostedDate()
     {
@@ -220,7 +220,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
      *
      * @return $this
      */
@@ -258,7 +258,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Gets reimbursed_amount.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency
      */
     public function getReimbursedAmount()
     {
@@ -268,7 +268,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Sets reimbursed_amount.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency $reimbursed_amount reimbursed_amount
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency $reimbursed_amount reimbursed_amount
      *
      * @return $this
      */
@@ -306,7 +306,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Gets safet_reimbursement_item_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\SAFETReimbursementItemList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\SAFETReimbursementItemList
      */
     public function getSafetReimbursementItemList()
     {
@@ -316,7 +316,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Sets safet_reimbursement_item_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\SAFETReimbursementItemList $safet_reimbursement_item_list safet_reimbursement_item_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\SAFETReimbursementItemList $safet_reimbursement_item_list safet_reimbursement_item_list
      *
      * @return $this
      */

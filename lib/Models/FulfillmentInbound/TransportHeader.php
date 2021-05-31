@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * TransportHeader Class Doc Comment.
@@ -49,7 +49,7 @@ class TransportHeader implements ModelInterface, ArrayAccess
         'seller_id' => 'string',
 'shipment_id' => 'string',
 'is_partnered' => 'bool',
-'shipment_type' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType',    ];
+'shipment_type' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -289,7 +289,7 @@ class TransportHeader implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_type.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType
      */
     public function getShipmentType()
     {
@@ -299,7 +299,7 @@ class TransportHeader implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_type.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType $shipment_type shipment_type
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\ShipmentType $shipment_type shipment_type
      *
      * @return $this
      */

@@ -13,7 +13,7 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI;
+namespace AdolphYu\AmazonSellingPartnerAPI;
 
 use Exception;
 

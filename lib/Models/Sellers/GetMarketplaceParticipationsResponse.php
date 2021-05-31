@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Sellers;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Sellers;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * GetMarketplaceParticipationsResponse Class Doc Comment.
@@ -46,8 +46,8 @@ class GetMarketplaceParticipationsResponse implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\Sellers\MarketplaceParticipationList',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\Sellers\ErrorList',    ];
+        'payload' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\MarketplaceParticipationList',
+'errors' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\ErrorList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -192,7 +192,7 @@ class GetMarketplaceParticipationsResponse implements ModelInterface, ArrayAcces
     /**
      * Gets payload.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Sellers\MarketplaceParticipationList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\MarketplaceParticipationList
      */
     public function getPayload()
     {
@@ -202,7 +202,7 @@ class GetMarketplaceParticipationsResponse implements ModelInterface, ArrayAcces
     /**
      * Sets payload.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Sellers\MarketplaceParticipationList $payload payload
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\MarketplaceParticipationList $payload payload
      *
      * @return $this
      */
@@ -216,7 +216,7 @@ class GetMarketplaceParticipationsResponse implements ModelInterface, ArrayAcces
     /**
      * Gets errors.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Sellers\ErrorList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\ErrorList
      */
     public function getErrors()
     {
@@ -226,7 +226,7 @@ class GetMarketplaceParticipationsResponse implements ModelInterface, ArrayAcces
     /**
      * Sets errors.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Sellers\ErrorList $errors errors
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Sellers\ErrorList $errors errors
      *
      * @return $this
      */

@@ -15,11 +15,11 @@
  * OpenAPI spec version: v1
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Services;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Services;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * RescheduleAppointmentRequest Class Doc Comment.
@@ -46,8 +46,8 @@ class RescheduleAppointmentRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'appointment_time' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput',
-'reschedule_reason_code' => '\ClouSale\AmazonSellingPartnerAPI\Models\Services\RescheduleReasonCode',    ];
+        'appointment_time' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput',
+'reschedule_reason_code' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Services\RescheduleReasonCode',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -199,7 +199,7 @@ class RescheduleAppointmentRequest implements ModelInterface, ArrayAccess
     /**
      * Gets appointment_time.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput
      */
     public function getAppointmentTime()
     {
@@ -209,7 +209,7 @@ class RescheduleAppointmentRequest implements ModelInterface, ArrayAccess
     /**
      * Sets appointment_time.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput $appointment_time appointment_time
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\AppointmentTimeInput $appointment_time appointment_time
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class RescheduleAppointmentRequest implements ModelInterface, ArrayAccess
     /**
      * Gets reschedule_reason_code.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Services\RescheduleReasonCode
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Services\RescheduleReasonCode
      */
     public function getRescheduleReasonCode()
     {
@@ -233,7 +233,7 @@ class RescheduleAppointmentRequest implements ModelInterface, ArrayAccess
     /**
      * Sets reschedule_reason_code.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Services\RescheduleReasonCode $reschedule_reason_code reschedule_reason_code
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Services\RescheduleReasonCode $reschedule_reason_code reschedule_reason_code
      *
      * @return $this
      */

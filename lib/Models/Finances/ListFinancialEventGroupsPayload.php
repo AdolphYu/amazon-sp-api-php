@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ListFinancialEventGroupsPayload Class Doc Comment.
@@ -47,7 +47,7 @@ class ListFinancialEventGroupsPayload implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'next_token' => 'string',
-'financial_event_group_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\FinancialEventGroupList',    ];
+'financial_event_group_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\FinancialEventGroupList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -216,7 +216,7 @@ class ListFinancialEventGroupsPayload implements ModelInterface, ArrayAccess
     /**
      * Gets financial_event_group_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\FinancialEventGroupList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\FinancialEventGroupList
      */
     public function getFinancialEventGroupList()
     {
@@ -226,7 +226,7 @@ class ListFinancialEventGroupsPayload implements ModelInterface, ArrayAccess
     /**
      * Sets financial_event_group_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\FinancialEventGroupList $financial_event_group_list financial_event_group_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\FinancialEventGroupList $financial_event_group_list financial_event_group_list
      *
      * @return $this
      */

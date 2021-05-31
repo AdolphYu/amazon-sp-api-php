@@ -15,11 +15,11 @@
  * OpenAPI spec version: 2020-07-01
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ReturnAuthorization Class Doc Comment.
@@ -48,7 +48,7 @@ class ReturnAuthorization implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'return_authorization_id' => 'string',
 'fulfillment_center_id' => 'string',
-'return_to_address' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address',
+'return_to_address' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address',
 'amazon_rma_id' => 'string',
 'rma_page_url' => 'string',    ];
 
@@ -274,7 +274,7 @@ class ReturnAuthorization implements ModelInterface, ArrayAccess
     /**
      * Gets return_to_address.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address
      */
     public function getReturnToAddress()
     {
@@ -284,7 +284,7 @@ class ReturnAuthorization implements ModelInterface, ArrayAccess
     /**
      * Sets return_to_address.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address $return_to_address return_to_address
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\Address $return_to_address return_to_address
      *
      * @return $this
      */

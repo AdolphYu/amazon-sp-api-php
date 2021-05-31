@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * TransportResult Class Doc Comment.
@@ -46,7 +46,7 @@ class TransportResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'transport_status' => '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportStatus',
+        'transport_status' => '\AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportStatus',
 'error_code' => 'string',
 'error_description' => 'string',    ];
 
@@ -202,7 +202,7 @@ class TransportResult implements ModelInterface, ArrayAccess
     /**
      * Gets transport_status.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportStatus
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportStatus
      */
     public function getTransportStatus()
     {
@@ -212,7 +212,7 @@ class TransportResult implements ModelInterface, ArrayAccess
     /**
      * Sets transport_status.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportStatus $transport_status transport_status
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\FulfillmentInbound\TransportStatus $transport_status transport_status
      *
      * @return $this
      */

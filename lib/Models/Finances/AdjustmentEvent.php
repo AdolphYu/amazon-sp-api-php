@@ -15,11 +15,11 @@
  * OpenAPI spec version: v0
  */
 
-namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
+namespace AdolphYu\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
+use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * AdjustmentEvent Class Doc Comment.
@@ -47,9 +47,9 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'adjustment_type' => 'string',
-'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
-'adjustment_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'adjustment_item_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\AdjustmentItemList',    ];
+'posted_date' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+'adjustment_amount' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency',
+'adjustment_item_list' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Finances\AdjustmentItemList',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -228,7 +228,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime
      */
     public function getPostedDate()
     {
@@ -238,7 +238,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
      *
      * @return $this
      */
@@ -252,7 +252,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets adjustment_amount.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency
      */
     public function getAdjustmentAmount()
     {
@@ -262,7 +262,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets adjustment_amount.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency $adjustment_amount adjustment_amount
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\Currency $adjustment_amount adjustment_amount
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets adjustment_item_list.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\AdjustmentItemList
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\AdjustmentItemList
      */
     public function getAdjustmentItemList()
     {
@@ -286,7 +286,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets adjustment_item_list.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\AdjustmentItemList $adjustment_item_list adjustment_item_list
+     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Finances\AdjustmentItemList $adjustment_item_list adjustment_item_list
      *
      * @return $this
      */
