@@ -22,7 +22,7 @@ use Exception;
  *
  * @author   Stefan Neuhaus / ClouSale
  */
-class ApiException extends Exception
+class ApiException extends Exception implements \Throwable
 {
     /**
      * The HTTP body of the server response either as Json or string.
