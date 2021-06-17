@@ -19,11 +19,8 @@ use AdolphYu\AmazonSellingPartnerAPI\ApiException;
 use AdolphYu\AmazonSellingPartnerAPI\Configuration;
 use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
 use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
-use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\GetCatalogItemResponse;
 use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\Item;
 use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemSearchResults;
-use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogCategoriesResponse;
-use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogItemsResponse;
 use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -78,7 +75,7 @@ class CatalogApi
      * @throws ApiException             on non-2xx response
      * @throws InvalidArgumentException
      *
-     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\GetCatalogItemResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\Item
      */
     public function getCatalogItem($marketplace_id, $asin,$included_data=null,$locale=null)
     {
@@ -139,7 +136,7 @@ class CatalogApi
     {
         $request = $this->getCatalogItemRequest($marketplace_id, $asin,$included_data,$locale);
 
-        return $this->sendRequestAsync($request, GetCatalogItemResponse::class);
+        return $this->sendRequestAsync($request, Item::class);
     }
 
     /**
@@ -212,7 +209,7 @@ class CatalogApi
      * @throws ApiException             on non-2xx response
      * @throws InvalidArgumentException
      *
-     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogItemsResponse
+     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemSearchResults
      */
     public function searchCatalogItems($keywords,$marketplaceIds, $includedData = null, $brandNames = null, $classificationIds = null, $pageSize = 20, $pageToken = null, $keywordsLocale = null, $locale = null)
     {

@@ -4,6 +4,8 @@
 namespace AdolphYu\AmazonSellingPartnerAPI\Models\Catalog;
 
 use AdolphYu\AmazonSellingPartnerAPI\Models\Common\BaseInfo;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Common\BaseList;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Common\StringList;
 
 
 class ItemVariationsByMarketplace extends BaseInfo
@@ -23,7 +25,7 @@ class ItemVariationsByMarketplace extends BaseInfo
      */
     protected static $swaggerTypes = [
         'marketplace_id' => 'string',
-        'asins' => 'array',
+        'asins' => StringList::class,
         'variationType' => 'string',
 
     ];
