@@ -221,7 +221,7 @@ class ItemSummaryByMarketplace extends BaseInfo
 
     public function setStyleName($styleName)
     {
-        $this->container['styleName'] = styleName;
+        $this->container['styleName'] = $styleName;
         return $this;
     }
 
