@@ -17,6 +17,7 @@
 
 namespace AdolphYu\AmazonSellingPartnerAPI\Models\Catalog;
 
+use AdolphYu\AmazonSellingPartnerAPI\Models\Common\BaseInfo;
 use ArrayAccess;
 use AdolphYu\AmazonSellingPartnerAPI\Models\ModelInterface;
 use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
@@ -24,14 +25,13 @@ use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
 /**
  * Item Class Doc Comment.
  *
-
  * @description An item in the Amazon catalog.
  *
  * @author   Stefan Neuhaus / ClouSale
  */
-class Item extends Categories implements ModelInterface, ArrayAccess
+class Item extends BaseInfo
 {
-    const DISCRIMINATOR = null;
+
 
     /**
      * The original name of the model.
@@ -46,10 +46,16 @@ class Item extends Categories implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'identifiers' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\IdentifierType',
-'attribute_sets' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\AttributeSetList',
-'relationships' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\RelationshipList',
-'sales_rankings' => '\AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\SalesRankList',    ];
+        'asin' => 'string',
+        'attributes' => 'string',
+        'identifiers' => \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemIdentifiers::class,
+        'images' => \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemImages::class,
+        'productTypes' => \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemProductTypes::class,
+        'ranks' => \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemSalesRanks::class,
+        'summaries' => \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemSummaries::class,
+        'variations' => \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemVariations::class,
+        'vendorDetails'=>\AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemVendorDetails::class,
+    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -57,30 +63,17 @@ class Item extends Categories implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
+        'asin' => null,
+        'attributes' => null,
         'identifiers' => null,
-'attribute_sets' => null,
-'relationships' => null,
-'sales_rankings' => null,    ];
+        'images' => null,
+        'productTypes' => null,
+        'ranks' => null,
+        'summaries' => null,
+        'variations' => null,
+        'vendorDetails' => null,
+    ];
 
-    /**
-     * Array of property to type mappings. Used for (de)serialization.
-     *
-     * @return array
-     */
-    public static function swaggerTypes()
-    {
-        return self::$swaggerTypes;
-    }
-
-    /**
-     * Array of property to format mappings. Used for (de)serialization.
-     *
-     * @return array
-     */
-    public static function swaggerFormats()
-    {
-        return self::$swaggerFormats;
-    }
 
     /**
      * Array of attributes where the key is the local name,
@@ -89,10 +82,16 @@ class Item extends Categories implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'identifiers' => 'Identifiers',
-'attribute_sets' => 'AttributeSets',
-'relationships' => 'Relationships',
-'sales_rankings' => 'SalesRankings',    ];
+        'asin' => 'asin',
+        'attributes' => 'attributes',
+        'identifiers' => 'identifiers',
+        'images' => 'images',
+        'productTypes' => 'productTypes',
+        'ranks' => 'ranks',
+        'summaries' => 'summaries',
+        'variations' => 'variations',
+        'vendorDetails' => 'vendorDetails',
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses).
@@ -100,10 +99,16 @@ class Item extends Categories implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'asin' => 'setAsin',
+        'attributes' => 'setAttributes',
         'identifiers' => 'setIdentifiers',
-'attribute_sets' => 'setAttributeSets',
-'relationships' => 'setRelationships',
-'sales_rankings' => 'setSalesRankings',    ];
+        'images' => 'setImages',
+        'productTypes' => 'setProductTypes',
+        'ranks' => 'setRanks',
+        'summaries' => 'setSummaries',
+        'variations' => 'setVariations',
+        'vendorDetails' => 'setVendorDetails',
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests).
@@ -111,263 +116,155 @@ class Item extends Categories implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'asin' => 'getAsin',
+        'attributes' => 'getAttributes',
         'identifiers' => 'getIdentifiers',
-'attribute_sets' => 'getAttributeSets',
-'relationships' => 'getRelationships',
-'sales_rankings' => 'getSalesRankings',    ];
+        'images' => 'getImages',
+        'productTypes' => 'getProductTypes',
+        'ranks' => 'getRanks',
+        'summaries' => 'getSummaries',
+        'variations' => 'getVariations',
+        'vendorDetails' => 'getVendorDetails',
+    ];
 
     /**
-     * Array of attributes where the key is the local name,
-     * and the value is the original name.
-     *
-     * @return array
-     */
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses).
-     *
-     * @return array
-     */
-    public static function setters()
-    {
-        return self::$setters;
-    }
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests).
-     *
-     * @return array
-     */
-    public static function getters()
-    {
-        return self::$getters;
-    }
-
-    /**
-     * The original name of the model.
+     * Gets asin.
      *
      * @return string
      */
-    public function getModelName()
+    public function getAsin()
     {
-        return self::$swaggerModelName;
+
+        return $this->container['asin'] ?? null;
     }
 
     /**
-     * Associative array for storing property values.
+     * Sets asin.
      *
-     * @var mixed[]
-     */
-    protected $container = [];
-
-    /**
-     * Constructor.
+     * @param string $identifiers
      *
-     * @param mixed[] $data Associated array of property values
-     *                      initializing the model
+     * @return $this
      */
-    public function __construct(array $data = null)
+    public function setAsin($asin)
     {
-        $this->container['identifiers'] = isset($data['identifiers']) ? $data['identifiers'] : null;
-        $this->container['attribute_sets'] = isset($data['attribute_sets']) ? $data['attribute_sets'] : null;
-        $this->container['relationships'] = isset($data['relationships']) ? $data['relationships'] : null;
-        $this->container['sales_rankings'] = isset($data['sales_rankings']) ? $data['sales_rankings'] : null;
+
+        $this->container['asin'] = $asin;
+
+        return $this;
     }
 
     /**
-     * Show all the invalid properties with reasons.
+     * Gets attributes.
      *
-     * @return array invalid properties with reasons
+     * @return string
      */
-    public function listInvalidProperties()
+    public function getAttributes()
     {
-        $invalidProperties = [];
-
-        if (null === $this->container['identifiers']) {
-            $invalidProperties[] = "'identifiers' can't be null";
-        }
-
-        return $invalidProperties;
+        return $this->container['attributes'] ?? null;
     }
 
     /**
-     * Validate all the properties in the model
-     * return true if all passed.
+     * Sets attributes.
      *
-     * @return bool True if all properties are valid
+     * @param ItemIdentifiers $attributes
+     *
+     * @return $this
      */
-    public function valid()
+    public function setAttributes($attributes)
     {
-        return 0 === count($this->listInvalidProperties());
+        $this->container['attributes'] = $attributes;
+
+        return $this;
     }
 
     /**
      * Gets identifiers.
      *
-     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\IdentifierType
+     * @return ItemIdentifiers
      */
     public function getIdentifiers()
     {
-        return $this->container['identifiers'];
+        return $this->container['identifiers'] ?? null;
     }
 
     /**
      * Sets identifiers.
      *
-     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\IdentifierType $identifiers identifiers
+     * @param string $attributes
      *
      * @return $this
      */
     public function setIdentifiers($identifiers)
     {
         $this->container['identifiers'] = $identifiers;
-
         return $this;
     }
 
-    /**
-     * Gets attribute_sets.
-     *
-     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\AttributeSetList
-     */
-    public function getAttributeSets()
+    public function getImages()
     {
-        return $this->container['attribute_sets'];
+        return $this->container['images'] ?? null;
     }
 
-    /**
-     * Sets attribute_sets.
-     *
-     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\AttributeSetList $attribute_sets attribute_sets
-     *
-     * @return $this
-     */
-    public function setAttributeSets($attribute_sets)
+    public function setImages($images)
     {
-        $this->container['attribute_sets'] = $attribute_sets;
-
+        $this->container['images'] = $images;
         return $this;
     }
 
-    /**
-     * Gets relationships.
-     *
-     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\RelationshipList
-     */
-    public function getRelationships()
+    public function getProductTypes()
     {
-        return $this->container['relationships'];
+        return $this->container['productTypes'] ?? null;
     }
 
-    /**
-     * Sets relationships.
-     *
-     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\RelationshipList $relationships relationships
-     *
-     * @return $this
-     */
-    public function setRelationships($relationships)
+    public function setProductTypes($productTypes)
     {
-        $this->container['relationships'] = $relationships;
-
+        $this->container['productTypes'] = $productTypes;
         return $this;
     }
 
-    /**
-     * Gets sales_rankings.
-     *
-     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\SalesRankList
-     */
-    public function getSalesRankings()
+
+    public function getRanks()
     {
-        return $this->container['sales_rankings'];
+        return $this->container['ranks'] ?? null;
     }
 
-    /**
-     * Sets sales_rankings.
-     *
-     * @param \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\SalesRankList $sales_rankings sales_rankings
-     *
-     * @return $this
-     */
-    public function setSalesRankings($sales_rankings)
+    public function setRanks($ranks)
     {
-        $this->container['sales_rankings'] = $sales_rankings;
-
+        $this->container['ranks'] = $ranks;
         return $this;
     }
 
-    /**
-     * Returns true if offset exists. False otherwise.
-     *
-     * @param int $offset Offset
-     *
-     * @return bool
-     */
-    public function offsetExists($offset)
+    public function getSummaries()
     {
-        return isset($this->container[$offset]);
+        return $this->container['summaries'] ?? null;
     }
 
-    /**
-     * Gets offset.
-     *
-     * @param int $offset Offset
-     *
-     * @return mixed
-     */
-    public function offsetGet($offset)
+    public function setSummaries($summaries)
     {
-        return isset($this->container[$offset]) ? $this->container[$offset] : null;
+        $this->container['summaries'] = $summaries;
+        return $this;
     }
 
-    /**
-     * Sets value based on offset.
-     *
-     * @param int   $offset Offset
-     * @param mixed $value  Value to be set
-     *
-     * @return void
-     */
-    public function offsetSet($offset, $value)
+    public function getVariations()
     {
-        if (is_null($offset)) {
-            $this->container[] = $value;
-        } else {
-            $this->container[$offset] = $value;
-        }
+        return $this->container['variations'] ?? null;
     }
 
-    /**
-     * Unsets offset.
-     *
-     * @param int $offset Offset
-     *
-     * @return void
-     */
-    public function offsetUnset($offset)
+    public function setVariations($variations)
     {
-        unset($this->container[$offset]);
+        $this->container['variations'] = $variations;
+        return $this;
     }
 
-    /**
-     * Gets the string presentation of the object.
-     *
-     * @return string
-     */
-    public function __toString()
+    public function getVendorDetails()
     {
-        if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(
-                ObjectSerializer::sanitizeForSerialization($this),
-                JSON_PRETTY_PRINT
-            );
-        }
-
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return $this->container['vendorDetails'] ?? null;
     }
+
+    public function setVendorDetails($vendorDetails)
+    {
+        $this->container['vendorDetails'] = $vendorDetails;
+        return $this;
+    }
+
 }

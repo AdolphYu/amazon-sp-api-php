@@ -19,12 +19,12 @@ namespace AdolphYu\AmazonSellingPartnerAPI\Models\Catalog;
 
 use AdolphYu\AmazonSellingPartnerAPI\Models\Common\BaseList;
 
-class ItemList extends BaseList
+class BrandRefinementList extends BaseList
 {
-    protected static $swaggerModelName = 'ItemList';
+    protected static $swaggerModelName = 'BrandRefinementList';
 
     public function getSubClass()
     {
-        return Item::class;
+        return BrandRefinement::class;
     }
 }

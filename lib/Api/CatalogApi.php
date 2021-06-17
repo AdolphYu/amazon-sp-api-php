@@ -20,6 +20,8 @@ use AdolphYu\AmazonSellingPartnerAPI\Configuration;
 use AdolphYu\AmazonSellingPartnerAPI\HeaderSelector;
 use AdolphYu\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
 use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\GetCatalogItemResponse;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\Item;
+use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ItemSearchResults;
 use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogCategoriesResponse;
 use AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogItemsResponse;
 use AdolphYu\AmazonSellingPartnerAPI\ObjectSerializer;
@@ -78,9 +80,9 @@ class CatalogApi
      *
      * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\GetCatalogItemResponse
      */
-    public function getCatalogItem($marketplace_id, $asin)
+    public function getCatalogItem($marketplace_id, $asin,$included_data=null,$locale=null)
     {
-        list($response) = $this->getCatalogItemWithHttpInfo($marketplace_id, $asin);
+        list($response) = $this->getCatalogItemWithHttpInfo($marketplace_id, $asin,$included_data,$locale);
 
         return $response;
     }
@@ -96,11 +98,11 @@ class CatalogApi
      *
      * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\GetCatalogItemResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getCatalogItemWithHttpInfo($marketplace_id, $asin)
+    public function getCatalogItemWithHttpInfo($marketplace_id, $asin,$included_data=null,$locale=null)
     {
-        $request = $this->getCatalogItemRequest($marketplace_id, $asin);
+        $request = $this->getCatalogItemRequest($marketplace_id, $asin,$included_data,$locale);
 
-        return $this->sendRequest($request, GetCatalogItemResponse::class);
+        return $this->sendRequest($request, Item::class);
     }
 
     /**
@@ -113,9 +115,9 @@ class CatalogApi
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCatalogItemAsync($marketplace_id, $asin)
+    public function getCatalogItemAsync($marketplace_id, $asin,$included_data=null,$locale=null)
     {
-        return $this->getCatalogItemAsyncWithHttpInfo($marketplace_id, $asin)
+        return $this->getCatalogItemAsyncWithHttpInfo($marketplace_id, $asin,$included_data,$locale)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -133,9 +135,9 @@ class CatalogApi
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCatalogItemAsyncWithHttpInfo($marketplace_id, $asin)
+    public function getCatalogItemAsyncWithHttpInfo($marketplace_id, $asin,$included_data=null,$locale=null)
     {
-        $request = $this->getCatalogItemRequest($marketplace_id, $asin);
+        $request = $this->getCatalogItemRequest($marketplace_id, $asin,$included_data,$locale);
 
         return $this->sendRequestAsync($request, GetCatalogItemResponse::class);
     }
@@ -150,7 +152,7 @@ class CatalogApi
      *
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function getCatalogItemRequest($marketplace_id, $asin)
+    protected function getCatalogItemRequest($marketplace_id, $asin,$included_data=null,$locale=null)
     {
         // verify the required parameter 'marketplace_id' is set
         if (null === $marketplace_id || (is_array($marketplace_id) && 0 === count($marketplace_id))) {
@@ -161,7 +163,7 @@ class CatalogApi
             throw new InvalidArgumentException('Missing the required parameter $asin when calling getCatalogItem');
         }
 
-        $resourcePath = '/catalog/v0/items/{asin}';
+        $resourcePath = '/catalog/2020-12-01/items/{asin}';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -170,7 +172,17 @@ class CatalogApi
 
         // query params
         if (null !== $marketplace_id) {
-            $queryParams['MarketplaceId'] = ObjectSerializer::toQueryValue($marketplace_id);
+            $queryParams['marketplaceIds'] = ObjectSerializer::toQueryValue($marketplace_id);
+        }
+
+        // query params
+        if (null !== $included_data) {
+            $queryParams['includedData'] = ObjectSerializer::toQueryValue($included_data);
+        }
+
+        // query params
+        if (null !== $locale) {
+            $queryParams['locale'] = ObjectSerializer::toQueryValue($locale);
         }
 
         // path params
@@ -186,125 +198,7 @@ class CatalogApi
     }
 
     /**
-     * Operation listCatalogCategories.
-     *
-     * @param string $marketplace_id A marketplace identifier. Specifies the marketplace for the item. (required)
-     * @param string $asin           The Amazon Standard Identification Number (ASIN) of the item. (optional)
-     * @param string $seller_sku     Used to identify items in the given marketplace. SellerSKU is qualified by the seller&#x27;s SellerId, which is included with every operation that you submit. (optional)
-     *
-     * @throws ApiException             on non-2xx response
-     * @throws InvalidArgumentException
-     *
-     * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogCategoriesResponse
-     */
-    public function listCatalogCategories($marketplace_id, $asin = null, $seller_sku = null)
-    {
-        list($response) = $this->listCatalogCategoriesWithHttpInfo($marketplace_id, $asin, $seller_sku);
-
-        return $response;
-    }
-
-    /**
-     * Operation listCatalogCategoriesWithHttpInfo.
-     *
-     * @param string $marketplace_id A marketplace identifier. Specifies the marketplace for the item. (required)
-     * @param string $asin           The Amazon Standard Identification Number (ASIN) of the item. (optional)
-     * @param string $seller_sku     Used to identify items in the given marketplace. SellerSKU is qualified by the seller&#x27;s SellerId, which is included with every operation that you submit. (optional)
-     *
-     * @throws ApiException             on non-2xx response
-     * @throws InvalidArgumentException
-     *
-     * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogCategoriesResponse, HTTP status code, HTTP response headers (array of strings)
-     */
-    public function listCatalogCategoriesWithHttpInfo($marketplace_id, $asin = null, $seller_sku = null)
-    {
-        $request = $this->listCatalogCategoriesRequest($marketplace_id, $asin, $seller_sku);
-
-        return $this->sendRequest($request, ListCatalogCategoriesResponse::class);
-    }
-
-    /**
-     * Operation listCatalogCategoriesAsync.
-     *
-     * @param string $marketplace_id A marketplace identifier. Specifies the marketplace for the item. (required)
-     * @param string $asin           The Amazon Standard Identification Number (ASIN) of the item. (optional)
-     * @param string $seller_sku     Used to identify items in the given marketplace. SellerSKU is qualified by the seller&#x27;s SellerId, which is included with every operation that you submit. (optional)
-     *
-     * @throws InvalidArgumentException
-     *
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function listCatalogCategoriesAsync($marketplace_id, $asin = null, $seller_sku = null)
-    {
-        return $this->listCatalogCategoriesAsyncWithHttpInfo($marketplace_id, $asin, $seller_sku)
-            ->then(
-                function ($response) {
-                    return $response[0];
-                }
-            );
-    }
-
-    /**
-     * Operation listCatalogCategoriesAsyncWithHttpInfo.
-     *
-     * @param string $marketplace_id A marketplace identifier. Specifies the marketplace for the item. (required)
-     * @param string $asin           The Amazon Standard Identification Number (ASIN) of the item. (optional)
-     * @param string $seller_sku     Used to identify items in the given marketplace. SellerSKU is qualified by the seller&#x27;s SellerId, which is included with every operation that you submit. (optional)
-     *
-     * @throws InvalidArgumentException
-     *
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function listCatalogCategoriesAsyncWithHttpInfo($marketplace_id, $asin = null, $seller_sku = null)
-    {
-        $request = $this->listCatalogCategoriesRequest($marketplace_id, $asin, $seller_sku);
-
-        return $this->sendRequestAsync($request, ListCatalogCategoriesResponse::class);
-    }
-
-    /**
-     * Create request for operation 'listCatalogCategories'.
-     *
-     * @param string $marketplace_id A marketplace identifier. Specifies the marketplace for the item. (required)
-     * @param string $asin           The Amazon Standard Identification Number (ASIN) of the item. (optional)
-     * @param string $seller_sku     Used to identify items in the given marketplace. SellerSKU is qualified by the seller&#x27;s SellerId, which is included with every operation that you submit. (optional)
-     *
-     * @throws InvalidArgumentException
-     *
-     * @return \GuzzleHttp\Psr7\Request
-     */
-    protected function listCatalogCategoriesRequest($marketplace_id, $asin = null, $seller_sku = null)
-    {
-        // verify the required parameter 'marketplace_id' is set
-        if (null === $marketplace_id || (is_array($marketplace_id) && 0 === count($marketplace_id))) {
-            throw new InvalidArgumentException('Missing the required parameter $marketplace_id when calling listCatalogCategories');
-        }
-
-        $resourcePath = '/catalog/v0/categories';
-        $formParams = [];
-        $queryParams = [];
-        $headerParams = [];
-        $httpBody = '';
-        $multipart = false;
-
-        // query params
-        if (null !== $marketplace_id) {
-            $queryParams['MarketplaceId'] = ObjectSerializer::toQueryValue($marketplace_id);
-        }
-        // query params
-        if (null !== $asin) {
-            $queryParams['ASIN'] = ObjectSerializer::toQueryValue($asin);
-        }
-        // query params
-        if (null !== $seller_sku) {
-            $queryParams['SellerSKU'] = ObjectSerializer::toQueryValue($seller_sku);
-        }
-
-        return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'GET', $httpBody);
-    }
-
-    /**
-     * Operation listCatalogItems.
+     * Operation searchCatalogItems.
      *
      * @param string $marketplace_id   A marketplace identifier. Specifies the marketplace for which items are returned. (required)
      * @param string $query            Keyword(s) to use to search for items in the catalog. Example: &#x27;harry potter books&#x27;. (optional)
@@ -320,15 +214,15 @@ class CatalogApi
      *
      * @return \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogItemsResponse
      */
-    public function listCatalogItems($marketplace_id, $query = null, $query_context_id = null, $seller_sku = null, $upc = null, $ean = null, $isbn = null, $jan = null)
+    public function searchCatalogItems($keywords,$marketplaceIds, $includedData = null, $brandNames = null, $classificationIds = null, $pageSize = 20, $pageToken = null, $keywordsLocale = null, $locale = null)
     {
-        list($response) = $this->listCatalogItemsWithHttpInfo($marketplace_id, $query, $query_context_id, $seller_sku, $upc, $ean, $isbn, $jan);
+        list($response) = $this->searchCatalogItemsWithHttpInfo($keywords,$marketplaceIds, $includedData, $brandNames, $classificationIds, $pageSize, $pageToken, $keywordsLocale, $locale);
 
         return $response;
     }
 
     /**
-     * Operation listCatalogItemsWithHttpInfo.
+     * Operation searchCatalogItemsWithHttpInfo.
      *
      * @param string $marketplace_id   A marketplace identifier. Specifies the marketplace for which items are returned. (required)
      * @param string $query            Keyword(s) to use to search for items in the catalog. Example: &#x27;harry potter books&#x27;. (optional)
@@ -344,15 +238,15 @@ class CatalogApi
      *
      * @return array of \AdolphYu\AmazonSellingPartnerAPI\Models\Catalog\ListCatalogItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function listCatalogItemsWithHttpInfo($marketplace_id, $query = null, $query_context_id = null, $seller_sku = null, $upc = null, $ean = null, $isbn = null, $jan = null)
+    public function searchCatalogItemsWithHttpInfo($keywords,$marketplaceIds, $includedData = null, $brandNames = null, $classificationIds = null, $pageSize = 20, $pageToken = null, $keywordsLocale = null, $locale = null)
     {
-        $request = $this->listCatalogItemsRequest($marketplace_id, $query, $query_context_id, $seller_sku, $upc, $ean, $isbn, $jan);
+        $request = $this->searchCatalogItemsRequest($keywords,$marketplaceIds, $includedData, $brandNames, $classificationIds, $pageSize, $pageToken, $keywordsLocale, $locale);
 
-        return $this->sendRequest($request, ListCatalogItemsResponse::class);
+        return $this->sendRequest($request, ItemSearchResults::class);
     }
 
     /**
-     * Operation listCatalogItemsAsync.
+     * Operation searchCatalogItemsAsync.
      *
      * @param string $marketplace_id   A marketplace identifier. Specifies the marketplace for which items are returned. (required)
      * @param string $query            Keyword(s) to use to search for items in the catalog. Example: &#x27;harry potter books&#x27;. (optional)
@@ -367,9 +261,9 @@ class CatalogApi
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listCatalogItemsAsync($marketplace_id, $query = null, $query_context_id = null, $seller_sku = null, $upc = null, $ean = null, $isbn = null, $jan = null)
+    public function searchCatalogItemsAsync($keywords,$marketplaceIds, $includedData = null, $brandNames = null, $classificationIds = null, $pageSize = 20, $pageToken = null, $keywordsLocale = null, $locale = null)
     {
-        return $this->listCatalogItemsAsyncWithHttpInfo($marketplace_id, $query, $query_context_id, $seller_sku, $upc, $ean, $isbn, $jan)
+        return $this->searchCatalogItemsAsyncWithHttpInfo($keywords,$marketplaceIds, $includedData, $brandNames, $classificationIds, $pageSize, $pageToken, $keywordsLocale, $locale)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -378,7 +272,7 @@ class CatalogApi
     }
 
     /**
-     * Operation listCatalogItemsAsyncWithHttpInfo.
+     * Operation searchCatalogItemsAsyncWithHttpInfo.
      *
      * @param string $marketplace_id   A marketplace identifier. Specifies the marketplace for which items are returned. (required)
      * @param string $query            Keyword(s) to use to search for items in the catalog. Example: &#x27;harry potter books&#x27;. (optional)
@@ -393,15 +287,15 @@ class CatalogApi
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listCatalogItemsAsyncWithHttpInfo($marketplace_id, $query = null, $query_context_id = null, $seller_sku = null, $upc = null, $ean = null, $isbn = null, $jan = null)
+    public function searchCatalogItemsAsyncWithHttpInfo($keywords,$marketplaceIds, $includedData = null, $brandNames = null, $classificationIds = null, $pageSize = 20, $pageToken = null, $keywordsLocale = null, $locale = null)
     {
-        $request = $this->listCatalogItemsRequest($marketplace_id, $query, $query_context_id, $seller_sku, $upc, $ean, $isbn, $jan);
+        $request = $this->searchCatalogItemsRequest($keywords,$marketplaceIds, $includedData, $brandNames, $classificationIds, $pageSize, $pageToken, $keywordsLocale, $locale);
 
-        return $this->sendRequestAsync($request, ListCatalogItemsResponse::class);
+        return $this->sendRequestAsync($request, ItemSearchResults::class);
     }
 
     /**
-     * Create request for operation 'listCatalogItems'.
+     * Create request for operation 'searchCatalogItems'.
      *
      * @param string $marketplace_id   A marketplace identifier. Specifies the marketplace for which items are returned. (required)
      * @param string $query            Keyword(s) to use to search for items in the catalog. Example: &#x27;harry potter books&#x27;. (optional)
@@ -416,14 +310,14 @@ class CatalogApi
      *
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function listCatalogItemsRequest($marketplace_id, $query = null, $query_context_id = null, $seller_sku = null, $upc = null, $ean = null, $isbn = null, $jan = null)
+    protected function searchCatalogItemsRequest($keywords,$marketplaceIds, $includedData = null, $brandNames = null, $classificationIds = null, $pageSize = 20, $pageToken = null, $keywordsLocale = null, $locale = null)
     {
         // verify the required parameter 'marketplace_id' is set
-        if (null === $marketplace_id || (is_array($marketplace_id) && 0 === count($marketplace_id))) {
-            throw new InvalidArgumentException('Missing the required parameter $marketplace_id when calling listCatalogItems');
+        if (null === $marketplaceIds || $keywords===null) {
+            throw new InvalidArgumentException('Missing the required parameter $marketplaceIds and $keywords when calling searchCatalogItems');
         }
 
-        $resourcePath = '/catalog/v0/items';
+        $resourcePath = '/catalog/2020-12-01/items';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -431,36 +325,42 @@ class CatalogApi
         $multipart = false;
 
         // query params
-        if (null !== $marketplace_id) {
-            $queryParams['MarketplaceId'] = ObjectSerializer::toQueryValue($marketplace_id);
+        if (null !== $keywords) {
+            $queryParams['keywords'] = ObjectSerializer::toQueryValue($keywords);
         }
         // query params
-        if (null !== $query) {
-            $queryParams['Query'] = ObjectSerializer::toQueryValue($query);
+        if (null !== $marketplaceIds) {
+            $queryParams['marketplaceIds'] = ObjectSerializer::toQueryValue($marketplaceIds);
+        }
+
+        // query params
+        if (null !== $includedData) {
+            $queryParams['includedData'] = ObjectSerializer::toQueryValue($includedData);
         }
         // query params
-        if (null !== $query_context_id) {
-            $queryParams['QueryContextId'] = ObjectSerializer::toQueryValue($query_context_id);
+        if (null !== $brandNames) {
+            $queryParams['brandNames'] = ObjectSerializer::toQueryValue($brandNames);
         }
         // query params
-        if (null !== $seller_sku) {
-            $queryParams['SellerSKU'] = ObjectSerializer::toQueryValue($seller_sku);
+        if (null !== $classificationIds) {
+            $queryParams['classificationIds'] = ObjectSerializer::toQueryValue($classificationIds);
         }
         // query params
-        if (null !== $upc) {
-            $queryParams['UPC'] = ObjectSerializer::toQueryValue($upc);
+        if (null !== $pageSize) {
+            $queryParams['pageSize'] = ObjectSerializer::toQueryValue($pageSize);
         }
         // query params
-        if (null !== $ean) {
-            $queryParams['EAN'] = ObjectSerializer::toQueryValue($ean);
+        if (null !== $pageToken) {
+            $queryParams['pageToken'] = ObjectSerializer::toQueryValue($pageToken);
         }
         // query params
-        if (null !== $isbn) {
-            $queryParams['ISBN'] = ObjectSerializer::toQueryValue($isbn);
+        if (null !== $keywordsLocale) {
+            $queryParams['keywordsLocale'] = ObjectSerializer::toQueryValue($keywordsLocale);
         }
+
         // query params
-        if (null !== $jan) {
-            $queryParams['JAN'] = ObjectSerializer::toQueryValue($jan);
+        if (null !== $locale) {
+            $queryParams['locale'] = ObjectSerializer::toQueryValue($locale);
         }
 
         return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'GET', $httpBody);
