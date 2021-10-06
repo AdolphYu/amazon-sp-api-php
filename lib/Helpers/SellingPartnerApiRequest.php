@@ -11,6 +11,7 @@ use GuzzleHttp\Psr7\Query;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use GuzzleHttp\Utils;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Trait SellingPartnerApiRequest.
@@ -19,7 +20,7 @@ use GuzzleHttp\Utils;
  */
 trait SellingPartnerApiRequest
 {
-    private function generateRequest(
+    public function generateRequest(
         bool $multipart,
         array $formParams,
         array $queryParams,
@@ -98,7 +99,7 @@ trait SellingPartnerApiRequest
     /**
      * @throws ApiException
      */
-    private function sendRequest(Request $request, string $returnType): array
+    public function sendRequest(Request $request, string $returnType): array
     {
         try {
             $options = $this->createHttpClientOption();
@@ -153,6 +154,43 @@ trait SellingPartnerApiRequest
         }
     }
 
+
+    /**
+     * @throws ApiException
+     */
+    public function send(Request $request):Response
+    {
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException("[{$e->getCode()}] {$e->getMessage()}", $e->getCode(), $e->getResponse() ? $e->getResponse()->getHeaders() : null, $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null);
+            }
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(sprintf('[%d] Error connecting to the API (%s)', $statusCode, $request->getUri()), $statusCode, $response->getHeaders(), $response->getBody());
+            }
+            return $response;
+
+        } catch (ApiException $e) {
+//            switch ($e->getCode()) {
+//                case 503:
+//                case 500:
+//                case 429:
+//                case 404:
+//                case 403:
+//                case 401:
+//                case 400:
+//                case 200:
+//                    return $e->getResponseObject();
+//                    break;
+//            }
+            throw $e;
+        }
+    }
+
     /**
      * Create http client option.
      *
@@ -160,7 +198,7 @@ trait SellingPartnerApiRequest
      *
      * @return array of http client options
      */
-    protected function createHttpClientOption(): array
+    public  function createHttpClientOption(): array
     {
         $options = [];
         if ($this->config->getDebug()) {
@@ -178,7 +216,7 @@ trait SellingPartnerApiRequest
      *
      * @return mixed
      */
-    private function sendRequestAsync(Request $request, string $returnType)
+    public function sendRequestAsync(Request $request, string $returnType)
     {
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
