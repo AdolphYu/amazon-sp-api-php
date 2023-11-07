@@ -99,7 +99,8 @@ class CatalogApi
     {
         $request = $this->getCatalogItemRequest($marketplace_id, $asin,$included_data,$locale);
 
-        return $this->sendRequest($request, Item::class);
+        //return $this->sendRequest($request, Item::class);
+        return $this->sendRequest($request, 'string');
     }
 
     /**
