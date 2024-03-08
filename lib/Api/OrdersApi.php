@@ -638,6 +638,9 @@ class OrdersApi
     public function getOrders($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $next_token = null, $amazon_order_ids = null)
     {
         list($response,$status,$headers) = $this->getOrdersWithHttpInfo($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
+        //$response->status = $status;
+        //$response->headers = $headers;
+        $response = json_decode($response);
         $response->status = $status;
         $response->headers = $headers;
         return $response;
@@ -671,7 +674,8 @@ class OrdersApi
         $returnType = '\AdolphYu\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
 
-        return $this->sendRequest($request, GetOrdersResponse::class);
+        //return $this->sendRequest($request, GetOrdersResponse::class);
+        return $this->sendRequest($request, 'string');
     }
 
     /**
