@@ -395,6 +395,9 @@ class OrdersApi
     public function getOrderItems($order_id, $next_token = null)
     {
         list($response,$status,$headers) = $this->getOrderItemsWithHttpInfo($order_id, $next_token);
+        //$response->status = $status;
+        //$response->headers = $headers;
+        $response = json_decode($response);
         $response->status = $status;
         $response->headers = $headers;
         return $response;
@@ -415,7 +418,8 @@ class OrdersApi
     {
         $request = $this->getOrderItemsRequest($order_id, $next_token);
 
-        return $this->sendRequest($request, GetOrderItemsResponse::class);
+        //return $this->sendRequest($request, GetOrderItemsResponse::class);
+        return $this->sendRequest($request, 'string');
     }
 
     /**
